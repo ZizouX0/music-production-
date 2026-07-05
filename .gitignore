@@ -1,0 +1,15 @@
+# SoundFonts are large binaries — keep local only
+*.sf2
+*.sf3
+
+# midi-generation skill scratch output
+.claude/skills/midi-generation/output/*
+!.claude/skills/midi-generation/output/.gitkeep
+
+# OS noise
+.DS_Store
+
+# Ableton Live noise (if sets ever live here)
+Backup/
+*.als.bak
+Ableton Project Info/

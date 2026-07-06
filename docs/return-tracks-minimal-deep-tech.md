@@ -1,4 +1,9 @@
-# Return Tracks — Minimal / Deep Tech ("Get Stupid" reference, 130 BPM)
+# Return Tracks — Tech House / Minimal Deep Tech ("Get Stupid" reference, 130 BPM)
+
+Genre note: Beatport files "Get Stupid" under Minimal / Deep Tech, but the
+same return architecture serves tech house identically — only send amounts
+shift. Tech house lean: clap send to A up a couple dB, vocal a bit more
+present in A and C. Minimal lean: starve the sends, bassline dominates.
 
 Four returns: A REV SHORT · B REV LONG · C DELAY · D CRUSH.
 Throws are send automation into B and C, not a separate return.

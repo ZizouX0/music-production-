@@ -25,6 +25,53 @@ Preference order for any instrument, effect, or processing suggestion:
 
 Never recommend a third-party plugin without naming the stock fallback.
 
+## Owned plugins & racks (step 2 of the rule — this is what Zizz has)
+
+Full scanned lists live in `inventory/plugins.txt` (VST3/AU/VST2) and
+`inventory/racks.txt` (460 unique .adg racks). Only suggest third-party
+tools that appear there. Go-to shortlist by job:
+
+- **Synths:** Serum + Serum 2, Diva, Zebra2, Vital, Analog Lab V,
+  Keyscape, Kontakt 7/8, Nexus, SynthMaster One, TyrellN6, Hybrid, M1,
+  UAD PolyMAX, LABS, Addictive Keys, Voltage Modular.
+- **EQ:** FabFilter Pro-Q 4 (also Q2/Q3), Maag EQ2, TDR Nova, MIXROOM.
+- **Compression/dynamics:** FabFilter Pro-C 2, Pro-MB, Pro-G, Pro-DS,
+  Pro-L 2; soothe2; OTT; UAD LA-2A & 1176; Neutron 4 Elements;
+  Gatekeeper; clippers: KClip3, KNOCK, FreeClip; transients: SPL
+  Attacker Plus, HelperTransients2.
+- **Saturation/color:** Saturn 2, RC-20 Retro Color, Decapitone, Black
+  Box HG-2, SausageFattener, Supercharger, UAD 610/Century, Fresh Air,
+  Vinyl, Wide Awake.
+- **Reverb/delay:** full Valhalla suite (VintageVerb, Room, Plate,
+  Shimmer, Delay, Supermassive, FreqEcho, UberMod, SpaceModulator),
+  FabFilter Pro-R 2, Timeless 3, EchoBoy (+Jr), Replika, SIENNA ROOMS.
+- **Motion/modulation:** ShaperBox 3, LFOTool, Movement, Endless Smile,
+  FabFilter Volcano 3, Twin 3, Supermodal, Manipulator.
+- **Vocals:** Auto-Tune Artist, Melodyne, iZotope RX 11 suite, Vocal
+  Doubler, LUX Vocal Preamp.
+- **Mastering/metering:** Ozone 11 (full module suite), Tonal Balance
+  Control 2, SPAN, Youlean Loudness Meter 2, MiniMeters, REFERENCE,
+  Ozone Imager 2, Insight 2.
+- **Waves:** WaveShells installed (v15.5–16.7) — individual Waves
+  plugins unverified; check the browser before recommending a specific
+  Waves device.
+
+**Racks (.adg) live on the external SSD** at
+`/Volumes/PortableSSD/Music PROD/` — they're only loadable when the SSD
+is mounted. Highlights:
+
+- `RACKS/_ORGANIZED/` — Zizz's curated library (230 racks) in numbered
+  folders: 01 BASS (54, incl. Mr. Bill generator racks), 05 DRUMS (43),
+  07 MIXING (28), 04 ARPS & KEYS (24), 09 FX & TRANSITIONS (22),
+  10 SOUND DESIGN (21), 06 VOCALS (18), 03 LEADS (9), 08 MASTERING (5),
+  02 PADS (4), 11 UTILITIES (2). Check here first when a job needs a
+  rack.
+- PML packs: Melodic Techno MINI V3 (107 instrument racks — bass, pads,
+  leads, arps), Melodic Deep by Francois (59), Fejka Melodic & Organic
+  (5), MHA course racks (5), Trap (22), Summer Vibes (8).
+- Whole Loops Golden Bundle (18, incl. Master/Drum/Vocal Sauce chains),
+  Producer School Radiant & Savannah (5).
+
 ## Operating principles (non-negotiable)
 
 1. **Read before write.** Inspect current session state (tracks, clips,

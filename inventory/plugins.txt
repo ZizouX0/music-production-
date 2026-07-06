@@ -1,0 +1,454 @@
+MUSIC PLUGINS INVENTORY
+Generated: 2026-07-05
+Scanned: user + system Library/Audio/Plug-Ins (VST3, Components/AU, VST)
+Duplicates removed within each format.
+
+========================================
+VST3  (169)
+========================================
+ADA Flanger
+AIR Jura Chorus
+Analog Lab V
+Astra
+Auto-Tune Artist
+Black Box Analog Design HG-2
+Comet
+Cradle The God Particle
+CUBE
+Decapitone
+Diva
+Endless Smile
+Eternal Return
+FabFilter Micro
+FabFilter One
+FabFilter Pro-C 2
+FabFilter Pro-DS
+FabFilter Pro-G
+FabFilter Pro-L
+FabFilter Pro-L 2
+FabFilter Pro-MB
+FabFilter Pro-Q 2
+FabFilter Pro-Q 3
+FabFilter Pro-Q 4
+FabFilter Pro-R
+FabFilter Pro-R 2
+FabFilter Saturn
+FabFilter Saturn 2
+FabFilter Simplon
+FabFilter Timeless 2
+FabFilter Timeless 3
+FabFilter Twin 2
+FabFilter Twin 3
+FabFilter Volcano 2
+FabFilter Volcano 3
+Filtron
+FIN-MICRO
+FIN-RETRO
+Formant
+Gatekeeper
+GM-ONE
+HelperTransients2
+Hybrid
+Jura
+KClip3
+Keyscape
+KNOCK Clipper
+Kontakt 7
+Kontakt 8
+KrystalField
+KSHMREssentialsKick
+LABS
+LOVEND
+LUX Sub-Bass
+LUX Vocal Preamp
+M1
+Maag EQ2
+Manipulator
+Melodyne
+MiniGrand
+MiniMeters
+MiniMeters - Audio-Server
+MiniMeters - Loudness
+MiniMeters - Oscilloscope
+MiniMeters - Spectrogram
+MiniMeters - Spectrum
+MiniMeters - Stereometer
+MiniMeters - VU
+MiniMeters - Waveform
+Mixboss
+MixBox
+MIXROOM
+Movement
+mvMeter2nogpu
+Neutron 4 Elements
+Nexus
+OrbitronCore
+OTT
+Ozone 11
+Ozone 11 Clarity
+Ozone 11 Dynamic EQ
+Ozone 11 Dynamics
+Ozone 11 Equalizer
+Ozone 11 Exciter
+Ozone 11 Imager
+Ozone 11 Impact
+Ozone 11 Low End Focus
+Ozone 11 Master Rebalance
+Ozone 11 Match EQ
+Ozone 11 Maximizer
+Ozone 11 Spectral Shaper
+Ozone 11 Stabilizer
+Ozone 11 Vintage Compressor
+Ozone 11 Vintage EQ
+Ozone 11 Vintage Limiter
+Ozone 11 Vintage Tape
+Ozone Imager 2
+Plasma
+RC-20 Retro Color
+REFERENCE
+Replika
+Retromulator
+RVRSE
+RX 11 Breath Control
+RX 11 Connect
+RX 11 De-click
+RX 11 De-clip
+RX 11 De-crackle
+RX 11 De-ess
+RX 11 De-hum
+RX 11 De-plosive
+RX 11 De-reverb
+RX 11 Dialogue Isolate
+RX 11 Guitar De-noise
+RX 11 Monitor
+RX 11 Mouth De-click
+RX 11 Repair Assistant
+RX 11 Spectral De-noise
+RX 11 Voice De-noise
+s(M)exoscope
+Saturation Knob
+SausageFattener
+SDRR2tube
+Serum
+Serum2
+ShaperBox 3
+SIENNA GURU
+SIENNA ROOMS
+soothe2
+Space In-Your-Face
+SPAN
+SPL Attacker Plus
+Splice INSTRUMENT
+Splice Sounds
+Splice Sounds Listener
+SpliceBridge
+Supercharger
+Supermodal
+Surrealistic MG-1 Plus
+SyndtSphere
+TBTECH Trinity Shaper
+TDR Nova
+Tonal Balance Control 2
+TyrellN6
+uaudio_610_a
+uaudio_610_b
+uaudio_century_channel_strip
+uaudio_polymax
+uaudio_showtime_amp
+uaudio_teletronix_la-2a_tc
+uaudio_ua_1176
+USYNTH
+ValhallaDelay
+ValhallaFreqEcho
+ValhallaPlate
+ValhallaRoom
+ValhallaShimmer
+ValhallaSpaceModulator
+ValhallaSupermassive
+ValhallaUberMod
+ValhallaVintageVerb
+VB-ROWDY
+Velvet
+Vinyl
+Vital
+Vocal Doubler
+Voltage Modular
+Voltage Modular FX
+WaveObserver
+WaveShell1-VST3 15.5
+WaveShell1-VST3 16.0
+WaveShell1-VST3 16.6
+WaveShell1-VST3 16.7
+Wide Awake
+Wider
+Youlean Loudness Meter 2
+Zebra2
+
+========================================
+AU (Audio Units / .component)  (177)
+========================================
+AIR Jura Chorus
+Analog Lab V
+Astra
+Auto-Tune Artist
+Comet
+Cradle The God Particle
+CUBE
+Decapitone
+Diva
+EchoBoy
+EchoBoyJr
+Endless Smile
+Eternal Return
+FabFilter Micro
+FabFilter One
+FabFilter Pro-C 2
+FabFilter Pro-DS
+FabFilter Pro-G
+FabFilter Pro-L
+FabFilter Pro-L 2
+FabFilter Pro-MB
+FabFilter Pro-Q 2
+FabFilter Pro-Q 3
+FabFilter Pro-Q 4
+FabFilter Pro-R
+FabFilter Pro-R 2
+FabFilter Saturn
+FabFilter Saturn 2
+FabFilter Simplon
+FabFilter Timeless 2
+FabFilter Timeless 3
+FabFilter Twin 2
+FabFilter Twin 3
+FabFilter Volcano 2
+FabFilter Volcano 3
+FIN-MICRO
+FIN-RETRO
+Fresh Air
+GatekeeperMIDI
+GM-ONE
+HelperTransients2
+Hybrid
+iZInsight2AUHook
+iZNeutron4ElementsAUHook
+iZOzone11AUHook
+iZOzone11ClarityAUHook
+iZOzone11DynamicEQAUHook
+iZOzone11DynamicsAUHook
+iZOzone11EqualizerAUHook
+iZOzone11ExciterAUHook
+iZOzone11ImagerAUHook
+iZOzone11ImpactAUHook
+iZOzone11LowEndFocusAUHook
+iZOzone11MasterRebalanceAUHook
+iZOzone11MatchEQAUHook
+iZOzone11MaximizerAUHook
+iZOzone11SpectralShaperAUHook
+iZOzone11StabilizerAUHook
+iZOzone11VintageCompressorAUHook
+iZOzone11VintageEQAUHook
+iZOzone11VintageLimiterAUHook
+iZOzone11VintageTapeAUHook
+iZOzoneImager2AUHook
+iZPlasmaAUHook
+iZRX11BreathControlAUHook
+iZRX11ConnectAUHook
+iZRX11De-clickAUHook
+iZRX11De-clipAUHook
+iZRX11De-crackleAUHook
+iZRX11De-essAUHook
+iZRX11De-humAUHook
+iZRX11De-plosiveAUHook
+iZRX11De-reverbAUHook
+iZRX11DialogueIsolateAUHook
+iZRX11GuitarDe-noiseAUHook
+iZRX11MonitorAUHook
+iZRX11MouthDe-clickAUHook
+iZRX11MusicRebalanceARAAUHook
+iZRX11RepairAssistantAUHook
+iZRX11SpectralDe-noiseAUHook
+iZRX11SpectralEditorAUHook
+iZRX11VoiceDe-noiseAUHook
+iZTonalBalanceControl2AUHook
+iZVinylAUHook
+iZVocalDoublerAUHook
+Jura
+KClip3
+KNOCK Clipper
+Kontakt 7
+Kontakt 8
+KrystalClip
+KrystalComp
+KrystalField
+KSHMREssentialsKick
+LABS
+LANDR FX Bass
+LANDR FX Beats
+LANDR FX Electric
+LANDR FX Voice
+LFOTool
+LFOTool_MFX
+LittleRadiator
+LOVEND
+LUX Sub-Bass
+LUX Vocal Preamp
+M1
+Manipulator
+Melodyne
+Mesa Lite
+MiniGrand
+MiniMeters
+MiniMeters - Audio-Server
+MiniMeters - Loudness
+MiniMeters - Oscilloscope
+MiniMeters - Spectrogram
+MiniMeters - Spectrum
+MiniMeters - Stereometer
+MiniMeters - VU
+MiniMeters - Waveform
+Mixboss
+MixBox
+Movement
+mvMeter2nogpu
+OrbitronCore
+OTT
+Power Grid Disruptor
+Replika
+Retromulator
+RVRSE
+s(M)exoscope
+Saturation Knob
+SausageFattener
+Serum2
+ShaperBox 3
+Sonalksis FreeG Mono
+Sonalksis FreeG Stereo
+soothe2
+Space In-Your-Face
+SPAN
+Splice INSTRUMENT
+Splice Sounds
+Splice Sounds Listener
+SpliceBridge
+Supercharger
+Supermodal
+SyndtSphere
+SynthMaster1
+SynthMaster1FX
+TBTECH Trinity Shaper
+ThingsTexture
+TyrellN6
+uaudio_610_a
+uaudio_610_b
+uaudio_century_channel_strip
+uaudio_polymax
+uaudio_showtime_amp
+uaudio_teletronix_la-2a_tc
+uaudio_ua_1176
+USYNTH
+ValhallaDelay
+ValhallaFreqEcho
+ValhallaPlate
+ValhallaRoomAU64
+ValhallaShimmerAU64
+ValhallaSpaceModulator
+ValhallaSupermassive
+ValhallaUberModAU64
+ValhallaVintageVerbAU64
+VB-ROWDY
+Velvet
+Vital
+WaveObserver
+WaveShell1-AU 15.5
+WaveShell1-AU 16.0
+WaveShell1-AU 16.6
+WaveShell1-AU 16.7
+Wide Awake
+Wider
+Youlean Loudness Meter 2
+
+========================================
+VST2 (.vst)  (81)
+========================================
+Addictive Keys
+AIR Jura Chorus
+Analog Lab V
+CUBE
+Endless Smile
+Eternal Return
+FabFilter Micro
+FabFilter Micro (Mono)
+FabFilter One
+FabFilter Pro-C 2
+FabFilter Pro-C 2 (Mono)
+FabFilter Pro-DS
+FabFilter Pro-DS (Mono)
+FabFilter Pro-G
+FabFilter Pro-G (Mono)
+FabFilter Pro-L
+FabFilter Pro-L (Mono)
+FabFilter Pro-L 2
+FabFilter Pro-MB
+FabFilter Pro-MB (Mono)
+FabFilter Pro-Q 2
+FabFilter Pro-Q 2 (Mono)
+FabFilter Pro-Q 3
+FabFilter Pro-Q 4
+FabFilter Pro-R
+FabFilter Pro-R (Mono)
+FabFilter Pro-R 2
+FabFilter Saturn
+FabFilter Saturn (Mono)
+FabFilter Saturn 2
+FabFilter Simplon
+FabFilter Timeless 2
+FabFilter Timeless 2 (SC)
+FabFilter Timeless 3
+FabFilter Twin 2
+FabFilter Twin 3
+FabFilter Volcano 2
+FabFilter Volcano 2 (Mono)
+FabFilter Volcano 2 (SC)
+FabFilter Volcano 2 (SC Mono)
+FabFilter Volcano 3
+FreeClip
+HelperTransients2
+Hybrid
+Jura
+KClip3
+KSHMREssentialsKick
+LABS
+LFOTool
+LOVEND
+M1
+MiniGrand
+Mixboss
+Movement
+mvMeter2nogpu
+OrbitronCore
+OTT
+Ozone Imager 2
+Replika
+SausageFattener
+ShaperBox 3
+soothe2
+Space In-Your-Face
+SPAN
+Supercharger
+SyndtSphere
+Tonal Balance Control 2
+ValhallaDelay
+ValhallaFreqEcho
+ValhallaPlate
+ValhallaRoom_x64
+ValhallaShimmer_x64
+ValhallaSpaceModulator
+ValhallaSupermassive
+ValhallaUberMod_x64
+ValhallaVintageVerb_x64
+Velvet
+Vinyl
+Vital
+Vocal Doubler
+Waves StudioRack for OBS
+Wide Awake

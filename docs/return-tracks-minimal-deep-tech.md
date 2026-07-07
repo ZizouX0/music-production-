@@ -212,6 +212,58 @@ drums come back denser than they left — cheap, effective impact trick.
 
 ---
 
+## Return E — SAT (parallel bass saturation — harmonics, not distortion)
+
+### Why it exists
+Sub must stay clean and mono, but clean sub is invisible on phones/laptops
+(they can't reproduce 40–90 Hz). Saturation generates harmonics of the sub
+(60 Hz → 120/180/240 Hz) and the ear reconstructs the missing fundamental.
+Dry path = clean sub for the club; this parallel path = harmonics for small
+speakers.
+
+### Chain
+
+**1. EQ Eight** — HP **150 Hz @ 48 dB/oct** (critical: no sub reaches the
+saturator — this path is harmonics-only) · LP 5 kHz @ 24 dB/oct (keeps fizz
+out of the vocal/hat range).
+
+**2. Saturator** (yours: Saturn 2 Warm Tube, or Decapitator) — Medium Curve
+· Drive **10–12 dB** · Soft Clip OFF · Output −10 dB · 100% wet ·
+**Hi-Quality mode ON** (right-click title bar — oversampling prevents
+aliasing at this drive).
+
+**3. EQ Eight (post, bypass by default)** — bell 2–3 kHz, −2 to −4 dB, Q 1,
+only if the layer barks over the vocal.
+
+**4. Utility** — **Mono (width 0%)**. This layer reinforces the bass;
+bass is center-mono, so its reinforcement is too.
+
+No duck device: Live sends are post-fader/post-FX, so the copy already
+carries the bass track's own sidechain pump. (Don't switch the send to
+Pre-FX or the pump disappears.)
+
+### Routing & dose
+- Bass track/group only → send E starting at **−10 dB** (range −12 to −6).
+- Raise until the bass steps forward in the drop, back off 2 dB.
+
+### Calibration test
+On a phone/laptop speaker: E muted = bassline nearly vanishes; unmuted =
+groove and notes clearly audible. On monitors the difference stays subtle —
+"more present," never "distorted."
+
+### Return D & E build notes (Live specifics)
+- Insert Return Track (right-click mixer area), rename, color.
+- D routing: drum bus send at **0 dB**, balance on the **return fader**
+  (~−10 to −12 dB) — cleaner gain into the chain, one obvious dose fader.
+- D calibration: mute/unmute during the drop — drums should lose weight and
+  glue, never reveal an audible second kit.
+- Parallel rule of thumb: bus-level or multi-device parallel = return;
+  single track + single device = just use the device's Dry/Wet knob
+  (e.g. vocal NY compression: Compressor 8:1, fast attack, ~8 dB GR,
+  Dry/Wet 30%, on the vocal track itself).
+
+---
+
 ## Send-map summary
 
 | Source | A REV SHORT | B REV LONG | C DELAY | D CRUSH |

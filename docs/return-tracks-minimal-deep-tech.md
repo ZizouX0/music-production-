@@ -178,7 +178,16 @@ a breakdown moment.
 **1. EQ Eight** — high-pass **100 Hz** (not 250 — you WANT drum body here,
 just not sub rumble), low-pass 10 kHz.
 
-**2. Glue Compressor** (yours: UAD 1176 all-buttons, or OTT at ~30% depth)
+**2a. UAD 1176 (primary — as built).** Meter → GR. All four ratio buttons
+in (all-buttons mode, Shift-click). Attack 6, Release 6 (knobs count
+BACKWARDS: 7 = fastest). Input clockwise from ~36 toward 18–12 until
+8–12 dB GR / the layer turns into breathing gritty texture (meter
+under-reads in all-buttons — ears win). Output ~18–24 so the crushed
+signal soloed matches the dry drums. If it gasps on kick tails: raise the
+pre-EQ HP toward 150 Hz or back Input off. All-buttons brings its own FET
+grit — the Saturator stage after may be unnecessary; judge by ear.
+
+**2b. Glue Compressor** (stock fallback; or OTT at ~30% depth)
 - Ratio **10:1** · Attack **0.3 ms** · Release **0.2 s or Auto**.
 - Threshold: slam it — **8–12 dB** of gain reduction. On an insert this
   would murder the transients; in parallel the dry bus keeps the punch and

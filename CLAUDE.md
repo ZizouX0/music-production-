@@ -30,8 +30,11 @@ generate finished tracks or audio.
   a knob's function from its name or panel position — HG-2 taught us
   Pentode/Triode are input-level faucets with unity at noon, not
   "amount" knobs. If the manual can't be verified, say so explicitly and
-  give by-ear guidance instead of invented numbers. Give values in the
-  units/positions the plugin displays.
+  give by-ear guidance instead of invented numbers. **Knob values are
+  always given in percentages** (convert 0–10 scales: ×10; convert
+  o'clock positions: noon = 50%). Exceptions: controls whose native unit
+  is dB/Hz/ms keep that unit; unlabeled controls get meter/by-ear
+  guidance.
 
 ## The three-option rule (apply to EVERY suggestion)
 

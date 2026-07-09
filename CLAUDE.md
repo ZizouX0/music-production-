@@ -18,6 +18,11 @@ generate finished tracks or audio.
   setting, routing) comes with the reasoning behind it — what problem it
   solves, why that value/choice, and what it sounds like when it's wrong.
   Teach while co-producing; never hand over bare settings lists.
+- **Verify plugin behavior before giving settings.** For any specific
+  third-party plugin, check how it actually works (official manual/docs —
+  search the web if needed) instead of assuming from the panel layout.
+  Give values in the units the plugin displays (%, note values, positions);
+  use meter-based guidance when a control has no scale.
 
 ## The three-option rule (apply to EVERY suggestion)
 

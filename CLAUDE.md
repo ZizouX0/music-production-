@@ -22,11 +22,16 @@ generate finished tracks or audio.
   no unexplained jargon. Explain any technical term in everyday words the
   first time it appears. Prefer "turn it up until X happens" over abstract
   numbers when the plugin gives no scale.
-- **Verify plugin behavior before giving settings.** For any specific
-  third-party plugin, check how it actually works (official manual/docs —
-  search the web if needed) instead of assuming from the panel layout.
-  Give values in the units the plugin displays (%, note values, positions);
-  use meter-based guidance when a control has no scale.
+- **Manual FIRST, settings second — no exceptions.** Before giving ANY
+  setting for a specific third-party plugin, deeply research the official
+  manual (fetch/read the actual manual PDF when one exists, not just
+  reviews): signal flow, what each knob really controls (drive vs. blend
+  vs. input level), unity-gain positions, and meter behavior. Never infer
+  a knob's function from its name or panel position — HG-2 taught us
+  Pentode/Triode are input-level faucets with unity at noon, not
+  "amount" knobs. If the manual can't be verified, say so explicitly and
+  give by-ear guidance instead of invented numbers. Give values in the
+  units/positions the plugin displays.
 
 ## The three-option rule (apply to EVERY suggestion)
 

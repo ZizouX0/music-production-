@@ -33,33 +33,40 @@ tools that appear there. Go-to shortlist by job:
 
 - **Synths:** Serum + Serum 2, Diva, Zebra2, Vital, Analog Lab V,
   Keyscape, Kontakt 7/8, Nexus, SynthMaster One, TyrellN6, Hybrid, M1,
-  UAD PolyMAX, LABS, Addictive Keys, Voltage Modular; UJAM Usynth line
-  (Bassment, Cyberdrive, Electrum, Hyperspace, Orbitron, Quickvox,
-  Retronaut cores).
+  UAD PolyMAX, LABS, Addictive Keys, Voltage Modular, UJAM Usynth
+  (one plugin hosting multiple Titles — check its Title switcher),
+  Splice Astra, Lunacy CUBE, AIR Jura/Hybrid/Velvet/MiniGrand.
+  Note: the seven "*Core" plugins are United Plugins FX, not synths —
+  Hyperspace (reverb), Retronaut (chorus), Orbitron (modulator),
+  Cyberdrive (distortion), Electrum/Bassment (amp sims), QuickVox
+  (vocal strip).
 - **EQ:** FabFilter Pro-Q 4 (also Q2/Q3), Maag EQ2, TDR Nova, MIXROOM.
 - **Compression/dynamics:** FabFilter Pro-C 2, Pro-MB, Pro-G, Pro-DS,
   Pro-L 2; soothe2; OTT; UAD LA-2A & 1176; Neutron 4 Elements;
   Gatekeeper, RoyalCompressor, FirePresser; clippers: KClip3, KNOCK,
   GClip, FreeClip; transients: SPL Attacker Plus, HelperTransients2,
   UrbanPuncher.
-- **Saturation/color:** Saturn 2, RC-20 Retro Color, Decapitone, Black
-  Box HG-2, SausageFattener, Supercharger, UAD 610/Century, Fresh Air,
-  Vinyl, Wide Awake.
+- **Saturation/color:** Saturn 2, RC-20 Retro Color, Black Box HG-2,
+  SausageFattener, Supercharger, UAD 610/Century, Fresh Air, Vinyl,
+  FireCharger, Cyberdrive/Electrum/Bassment Cores. (Decapitone is
+  unidentified — verify its vendor in Live before recommending.)
 - **Reverb/delay:** full Valhalla suite (VintageVerb, Room, Plate,
   Shimmer, Delay, Supermassive, FreqEcho, UberMod, SpaceModulator),
-  FabFilter Pro-R 2, Timeless 3, EchoBoy (+Jr), Replika, SIENNA ROOMS.
+  FabFilter Pro-R 2, Timeless 3, EchoBoy (+Jr), Replika, Comet
+  (Polyverse), HyperspaceCore.
 - **Motion/modulation:** ShaperBox 3, LFOTool, Movement, Endless Smile,
   FabFilter Volcano 3, Twin 3, Supermodal, Manipulator.
 - **Vocals:** Auto-Tune Artist, Melodyne, iZotope RX 11 suite, Vocal
-  Doubler, LUX Vocal Preamp, LittleAlterBoy, FireCharger/FireMaximizer.
+  Doubler, LUX Vocal Preamp, LittleAlterBoy, QuickVox Core.
 
 **Per-plugin control reference:** `docs/plugins/` holds a verified,
 manual-sourced reference (what each plugin does, what each main control
 does). Consult it before giving parameter-level advice on any
 third-party plugin; prefer it over memory.
 - **Mastering/metering:** Ozone 11 (full module suite), Tonal Balance
-  Control 2, SPAN, Youlean Loudness Meter 2, MiniMeters, REFERENCE,
-  Ozone Imager 2, Insight 2.
+  Control 2, SPAN, Youlean Loudness Meter 2, MiniMeters, mvMeter2,
+  REFERENCE, Insight 2, FireMaximizer; stereo: Ozone Imager 2, Wider,
+  Wide Awake (Dada Life).
 - **Waves:** WaveShells installed (v15.5–16.7) — individual Waves
   plugins unverified; check the browser before recommending a specific
   Waves device.

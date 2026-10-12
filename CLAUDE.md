@@ -95,7 +95,9 @@ is mounted. Highlights:
   `groove-builder`, `sound-designer`, `sidechain-setup`, `vocal-chain`,
   `arrangement-coach`, `mastering-prep`, `reference-match`, `tempo-coach`.
 - **Mix/master knowledge:** `audio-production` skill (signal chain,
-  frequency bands, headroom −6 to −18 dB, LUFS targets).
+  frequency bands, headroom −6 to −18 dB, LUFS targets). Zizz mixes with
+  the Mastering.com foundation method — targets and order in
+  `docs/mixing-foundation.md`; follow it in every mix session.
 - **Theory-backed MIDI files:** `midi-generation` skill (tubone24) — use its
   bundled Python scripts, never hand-rolled MIDI code. Needs `midiutil`;
   WAV preview needs FluidSynth + a GM SoundFont in

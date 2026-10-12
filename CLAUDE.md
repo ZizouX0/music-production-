@@ -33,12 +33,15 @@ tools that appear there. Go-to shortlist by job:
 
 - **Synths:** Serum + Serum 2, Diva, Zebra2, Vital, Analog Lab V,
   Keyscape, Kontakt 7/8, Nexus, SynthMaster One, TyrellN6, Hybrid, M1,
-  UAD PolyMAX, LABS, Addictive Keys, Voltage Modular.
+  UAD PolyMAX, LABS, Addictive Keys, Voltage Modular; UJAM Usynth line
+  (Bassment, Cyberdrive, Electrum, Hyperspace, Orbitron, Quickvox,
+  Retronaut cores).
 - **EQ:** FabFilter Pro-Q 4 (also Q2/Q3), Maag EQ2, TDR Nova, MIXROOM.
 - **Compression/dynamics:** FabFilter Pro-C 2, Pro-MB, Pro-G, Pro-DS,
   Pro-L 2; soothe2; OTT; UAD LA-2A & 1176; Neutron 4 Elements;
-  Gatekeeper; clippers: KClip3, KNOCK, FreeClip; transients: SPL
-  Attacker Plus, HelperTransients2.
+  Gatekeeper, RoyalCompressor, FirePresser; clippers: KClip3, KNOCK,
+  GClip, FreeClip; transients: SPL Attacker Plus, HelperTransients2,
+  UrbanPuncher.
 - **Saturation/color:** Saturn 2, RC-20 Retro Color, Decapitone, Black
   Box HG-2, SausageFattener, Supercharger, UAD 610/Century, Fresh Air,
   Vinyl, Wide Awake.
@@ -48,7 +51,12 @@ tools that appear there. Go-to shortlist by job:
 - **Motion/modulation:** ShaperBox 3, LFOTool, Movement, Endless Smile,
   FabFilter Volcano 3, Twin 3, Supermodal, Manipulator.
 - **Vocals:** Auto-Tune Artist, Melodyne, iZotope RX 11 suite, Vocal
-  Doubler, LUX Vocal Preamp.
+  Doubler, LUX Vocal Preamp, LittleAlterBoy, FireCharger/FireMaximizer.
+
+**Per-plugin control reference:** `docs/plugins/` holds a verified,
+manual-sourced reference (what each plugin does, what each main control
+does). Consult it before giving parameter-level advice on any
+third-party plugin; prefer it over memory.
 - **Mastering/metering:** Ozone 11 (full module suite), Tonal Balance
   Control 2, SPAN, Youlean Loudness Meter 2, MiniMeters, REFERENCE,
   Ozone Imager 2, Insight 2.

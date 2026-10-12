@@ -1,22 +1,30 @@
 MUSIC PLUGINS INVENTORY
-Generated: 2026-07-05
-Scanned: user + system Library/Audio/Plug-Ins (VST3, Components/AU, VST)
-Duplicates removed within each format.
+Generated: 2026-10-12 21:17
 
-========================================
-VST3  (169)
-========================================
+========== VST3 — /Users/azizdardouri/Library/Audio/Plug-Ins/VST3 ==========
+Decapitone
+
+========== Components — /Users/azizdardouri/Library/Audio/Plug-Ins/Components ==========
+Decapitone
+
+========== VST — /Users/azizdardouri/Library/Audio/Plug-Ins/VST ==========
+
+========== VST3 — /Library/Audio/Plug-Ins/VST3 ==========
 ADA Flanger
 AIR Jura Chorus
 Analog Lab V
 Astra
 Auto-Tune Artist
+BassmentCore
 Black Box Analog Design HG-2
 Comet
 Cradle The God Particle
 CUBE
-Decapitone
+CyberdriveCore
 Diva
+EchoBoy
+EchoBoyJr
+ElectrumCore
 Endless Smile
 Eternal Return
 FabFilter Micro
@@ -44,11 +52,17 @@ FabFilter Volcano 3
 Filtron
 FIN-MICRO
 FIN-RETRO
+FireCharger
+FireMaximizer
+FirePresser
 Formant
+Fresh Air
 Gatekeeper
+GClip
 GM-ONE
 HelperTransients2
 Hybrid
+HyperspaceCore
 Jura
 KClip3
 Keyscape
@@ -58,6 +72,12 @@ Kontakt 8
 KrystalField
 KSHMREssentialsKick
 LABS
+LANDR FX Bass
+LANDR FX Beats
+LANDR FX Electric
+LANDR FX Voice
+LittleAlterBoy
+LittleRadiator
 LOVEND
 LUX Sub-Bass
 LUX Vocal Preamp
@@ -104,10 +124,13 @@ Ozone 11 Vintage Limiter
 Ozone 11 Vintage Tape
 Ozone Imager 2
 Plasma
+QuickVoxCore
 RC-20 Retro Color
 REFERENCE
 Replika
 Retromulator
+RetronautCore
+RoyalCompressor
 RVRSE
 RX 11 Breath Control
 RX 11 Connect
@@ -157,6 +180,7 @@ uaudio_polymax
 uaudio_showtime_amp
 uaudio_teletronix_la-2a_tc
 uaudio_ua_1176
+UrbanPuncher
 USYNTH
 ValhallaDelay
 ValhallaFreqEcho
@@ -184,20 +208,20 @@ Wider
 Youlean Loudness Meter 2
 Zebra2
 
-========================================
-AU (Audio Units / .component)  (177)
-========================================
+========== Components — /Library/Audio/Plug-Ins/Components ==========
 AIR Jura Chorus
 Analog Lab V
 Astra
 Auto-Tune Artist
+BassmentCore
 Comet
 Cradle The God Particle
 CUBE
-Decapitone
+CyberdriveCore
 Diva
 EchoBoy
 EchoBoyJr
+ElectrumCore
 Endless Smile
 Eternal Return
 FabFilter Micro
@@ -224,11 +248,15 @@ FabFilter Volcano 2
 FabFilter Volcano 3
 FIN-MICRO
 FIN-RETRO
+FireCharger
+FireMaximizer
+FirePresser
 Fresh Air
 GatekeeperMIDI
 GM-ONE
 HelperTransients2
 Hybrid
+HyperspaceCore
 iZInsight2AUHook
 iZNeutron4ElementsAUHook
 iZOzone11AUHook
@@ -288,6 +316,7 @@ LANDR FX Electric
 LANDR FX Voice
 LFOTool
 LFOTool_MFX
+LittleAlterBoy
 LittleRadiator
 LOVEND
 LUX Sub-Bass
@@ -313,8 +342,11 @@ mvMeter2nogpu
 OrbitronCore
 OTT
 Power Grid Disruptor
+QuickVoxCore
 Replika
 Retromulator
+RetronautCore
+RoyalCompressor
 RVRSE
 s(M)exoscope
 Saturation Knob
@@ -345,6 +377,7 @@ uaudio_polymax
 uaudio_showtime_amp
 uaudio_teletronix_la-2a_tc
 uaudio_ua_1176
+UrbanPuncher
 USYNTH
 ValhallaDelay
 ValhallaFreqEcho
@@ -367,13 +400,16 @@ Wide Awake
 Wider
 Youlean Loudness Meter 2
 
-========================================
-VST2 (.vst)  (81)
-========================================
+========== VST — /Library/Audio/Plug-Ins/VST ==========
 Addictive Keys
 AIR Jura Chorus
 Analog Lab V
+BassmentCore
 CUBE
+CyberdriveCore
+EchoBoy
+EchoBoyJr
+ElectrumCore
 Endless Smile
 Eternal Return
 FabFilter Micro
@@ -408,17 +444,27 @@ FabFilter Twin 2
 FabFilter Twin 3
 FabFilter Volcano 2
 FabFilter Volcano 2 (Mono)
-FabFilter Volcano 2 (SC)
 FabFilter Volcano 2 (SC Mono)
+FabFilter Volcano 2 (SC)
 FabFilter Volcano 3
+FIN-MICRO
+FIN-RETRO
+FireCharger
+FireMaximizer
+FirePresser
 FreeClip
+Fresh Air
+GM-ONE
 HelperTransients2
 Hybrid
+HyperspaceCore
 Jura
 KClip3
 KSHMREssentialsKick
 LABS
 LFOTool
+LittleAlterBoy
+LittleRadiator
 LOVEND
 M1
 MiniGrand
@@ -428,7 +474,11 @@ mvMeter2nogpu
 OrbitronCore
 OTT
 Ozone Imager 2
+QuickVoxCore
 Replika
+RetronautCore
+RoyalCompressor
+Saturation Knob
 SausageFattener
 ShaperBox 3
 soothe2
@@ -436,7 +486,10 @@ Space In-Your-Face
 SPAN
 Supercharger
 SyndtSphere
+TBTECH Trinity Shaper
 Tonal Balance Control 2
+UrbanPuncher
+USYNTH
 ValhallaDelay
 ValhallaFreqEcho
 ValhallaPlate
@@ -446,6 +499,7 @@ ValhallaSpaceModulator
 ValhallaSupermassive
 ValhallaUberMod_x64
 ValhallaVintageVerb_x64
+VB-ROWDY
 Velvet
 Vinyl
 Vital

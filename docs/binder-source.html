@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1c2340; }
+.page { width: 210mm; height: 297mm; page-break-after: always; overflow: hidden;
+  background: linear-gradient(160deg, #10152e 0%, #1a1f3d 55%, #221a3d 100%); padding: 11mm 11mm 9mm 11mm;
+  display: flex; flex-direction: column; }
+.phead { display: flex; justify-content: space-between; align-items: baseline;
+  color: #8a91b4; font-size: 7.5pt; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 4mm; }
+.phead b { color: #d9a441; }
+.ptitle { background: #fff; border-radius: 4mm; padding: 4mm 6mm; margin-bottom: 4.5mm;
+  display: flex; align-items: center; gap: 5mm; }
+.ptitle h1 { margin: 0; font-size: 17pt; letter-spacing: 1px; color: #141a38; font-weight: 800; }
+.ptitle .tag { font-size: 8pt; color: #e85a6a; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.card { background: #fff; border-radius: 3.5mm; padding: 4.4mm 5.2mm; margin-bottom: 3.8mm; }
+.card h3 { margin: 0 0 2mm 0; font-size: 11.3pt; color: #141a38; letter-spacing: .5px; }
+.card p { margin: 0; font-size: 9.3pt; line-height: 1.5; color: #2a3050; }
+.gold { color: #b8860b; font-weight: 700; }
+.coral { color: #e85a6a; font-weight: 700; }
+.row { display: flex; gap: 3.2mm; }
+.col { flex: 1; min-width: 0; }
+.step { display: flex; gap: 3.4mm; background: #fff; border-radius: 3mm; padding: 3.8mm 4.4mm; margin-bottom: 3.4mm; align-items: flex-start; }
+.n { flex: 0 0 8.5mm; height: 8.5mm; border-radius: 2mm; background: #d9a441; color: #141a38;
+  font-weight: 800; font-size: 12pt; display: flex; align-items: center; justify-content: center; }
+.step div p { margin: 0; font-size: 9.3pt; line-height: 1.46; color: #2a3050; }
+.step div b { color: #141a38; }
+table { border-collapse: collapse; width: 100%; font-size: 8.7pt; }
+th { background: #141a38; color: #fff; text-align: left; padding: 2mm 2.4mm; font-size: 7.6pt;
+  letter-spacing: .6px; text-transform: uppercase; }
+td { padding: 2.3mm 2.6mm; border-bottom: 1px solid #e3e6f0; color: #2a3050; vertical-align: top; line-height: 1.32; }
+tr:last-child td { border-bottom: none; }
+td b { color: #141a38; }
+.chip { display: inline-block; background: #eef0f8; border: 1px solid #d5d9ea; color: #28304f;
+  border-radius: 6mm; padding: .8mm 2.6mm; font-size: 8.2pt; margin: .8mm .8mm 0 0; font-weight: 600; }
+.chip.star { background: #d9a441; border-color: #d9a441; color: #141a38; }
+.chip.stock { background: #1f8a7d; border-color: #1f8a7d; color: #fff; }
+.band { border-radius: 3mm; padding: 3mm 4mm; margin-bottom: 2.8mm; color: #fff; }
+.band h3 { margin: 0 0 1mm 0; font-size: 10.5pt; }
+.band p { margin: 0 0 1.8mm 0; font-size: 9.2pt; opacity: .92; }
+.note { background: rgba(255,255,255,.08); border-left: 1.2mm solid #d9a441; border-radius: 1.5mm;
+  color: #cdd2e8; font-size: 9pt; padding: 3mm 4mm; line-height: 1.4; margin-top: auto; }
+.note b { color: #d9a441; }
+.vu { background: #fdf9ef; border-radius: 2.5mm; padding: 3mm; }
+.vubar { display: flex; height: 9mm; border-radius: 1.6mm; overflow: hidden; font-size: 7.6pt; font-weight: 700; }
+.vubar div { display: flex; align-items: center; justify-content: center; color: #fff; }
+.two { column-count: 2; column-gap: 3.2mm; }
+.kv { display: flex; justify-content: space-between; border-bottom: 1px dashed #d5d9ea; padding: 1.8mm 0; font-size: 9.2pt; }
+.kv b { color: #141a38; } .kv span { color: #e85a6a; font-weight: 700; }
+</style></head><body>
+
+<!-- 1 COVER -->
+<div class="page" style="justify-content:center; text-align:center;">
+  <div style="color:#d9a441; letter-spacing:6px; font-size:11pt; font-weight:700;">ZIZZ</div>
+  <div style="color:#fff; font-size:38pt; font-weight:800; letter-spacing:3px; margin:6mm 0 2mm;">PRODUCTION<br>BINDER</div>
+  <div style="color:#e85a6a; letter-spacing:4px; font-size:10pt; text-transform:uppercase;">Mix Method · Tool System · Plugin Map</div>
+  <div style="margin:14mm auto 0; width:34mm; height:1px; background:#d9a441;"></div>
+  <div style="color:#8a91b4; font-size:8.5pt; margin-top:10mm; line-height:1.8;">
+    Tech House · Melodic House · 120–126 BPM<br>Ableton Live 12 · Stock-first, three-option rule<br>Compiled from the music-production repo</div>
+</div>
+
+<!-- 2 CONTENTS -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>CONTENTS</span></div>
+  <div class="ptitle"><h1>Contents</h1><span class="tag">How to use this binder</span></div>
+  <div class="card"><table>
+    <tr><td><b>03</b></td><td><b>Session Setup</b> — the 12 steps before mixing</td></tr>
+    <tr><td><b>04</b></td><td><b>The Foundation</b> — kick → bass → clap → stress test</td></tr>
+    <tr><td><b>05</b></td><td><b>Meters</b> — which meter, which number, every step</td></tr>
+    <tr><td><b>06</b></td><td><b>EQ System</b> — wrong vs. nicer, the four buttons</td></tr>
+    <tr><td><b>07</b></td><td><b>Compressors</b> — the seven hands</td></tr>
+    <tr><td><b>08</b></td><td><b>Saturation</b> — the heat scale</td></tr>
+    <tr><td><b>09</b></td><td><b>Reverb &amp; Delay</b> — types, placement, settings</td></tr>
+    <tr><td><b>10</b></td><td><b>Mixing the Tracks</b> — balance order + problem table</td></tr>
+    <tr><td><b>11</b></td><td><b>Drum Bus &amp; Punch</b> — the chain + transient tools</td></tr>
+    <tr><td><b>12</b></td><td><b>Space, Width &amp; Story</b> — panning, mono, automation</td></tr>
+    <tr><td><b>13</b></td><td><b>Daily Loadout &amp; Targets</b> — the one-page session card</td></tr>
+    <tr><td><b>14</b></td><td><b>Appendix A</b> — sound sources map</td></tr>
+    <tr><td><b>15</b></td><td><b>Appendix B</b> — FX roster by job</td></tr>
+    <tr><td><b>16</b></td><td><b>Numbers &amp; open items</b> — everything on one back page</td></tr>
+  </table></div>
+  <div class="card"><h3>How to use it</h3>
+  <p>One topic per page, built for mid-session glances. <span class="gold">Gold chips</span> = first grab.
+  <span style="color:#1f8a7d;font-weight:700;">Green chips</span> = Ableton stock (always first per the three-option rule).
+  Plain chips = owned alternatives for specific flavors. The repo markdown stays the source of truth — regenerate after updates.</p></div>
+  <div class="note"><b>The whole system in one line:</b> calibrate the foundation with meters → balance with faders → fix only what's broken → season with character tools → verify against a reference, then bounce at −6 dBFS.</div>
+</div>
+
+<!-- 3 SESSION SETUP -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 03</span></div>
+  <div class="ptitle"><h1>Session Setup</h1><span class="tag">12 steps · before any fader moves</span></div>
+  <div class="row"><div class="col">
+    <div class="step"><div class="n">1</div><div><p><b>Same track order, every project.</b> Drums → bass → synths → vocals → FX.</p></div></div>
+    <div class="step"><div class="n">2</div><div><p><b>Name + color-code</b> consistently. Your hands learn the map.</p></div></div>
+    <div class="step"><div class="n">3</div><div><p><b>Delete dead tracks;</b> park "maybes" in a muted _PARKED group.</p></div></div>
+    <div class="step"><div class="n">4</div><div><p><b>Group to busses:</b> DRUMS · BASS · SYNTHS · VOCALS · FX (Cmd+G).</p></div></div>
+    <div class="step"><div class="n">5</div><div><p><b>Gain stage every channel</b> to peak between <span class="coral">−30 and −6 dBFS</span> — clip gain / Utility, never the fader.</p></div></div>
+    <div class="step"><div class="n">6</div><div><p><b>All faders at 0. Master at 0.</b> Forever.</p></div></div>
+  </div><div class="col">
+    <div class="step"><div class="n">7</div><div><p><b>10 ms fades</b> on every audio clip edge (Cmd+Opt+F). Kills clicks.</p></div></div>
+    <div class="step"><div class="n">8</div><div><p><b>Tempo + signature set,</b> section locators dropped (intro / groove / break / drop / outro).</p></div></div>
+    <div class="step"><div class="n">9</div><div><p><b>Buffer 1024</b> while mixing. Latency is free; crackles are not.</p></div></div>
+    <div class="step"><div class="n">10</div><div><p><b>REF track:</b> 2–3 pro tracks in your lane, muted, Utility at −6…−8 dB for fair A/B, sends off.</p></div></div>
+    <div class="step"><div class="n">11</div><div><p><b>Meters last on Main:</b> mvMeter2 (VU Standard) → Youlean. Nothing after them.</p></div></div>
+    <div class="step"><div class="n">12</div><div><p><b>Save as Template</b> once — setup becomes 2 minutes per track.</p></div></div>
+  </div></div>
+  <div class="note"><b>Why it matters:</b> every step converts a recurring cost (searching, re-deciding, recalibrating) into a one-time cost. Pros aren't faster because of secret tricks — their attention is free for the ten decisions that matter.</div>
+</div>
+
+<!-- 4 FOUNDATION -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 04</span></div>
+  <div class="ptitle"><h1>The Foundation</h1><span class="tag">Build these three first · then never touch</span></div>
+  <div class="step"><div class="n">1</div><div><p><b>KICK alone → Youlean True Peak Max ≈ −5.0 dBFS.</b> Reset ✕ → play 8 bars → read → adjust Utility gain → repeat. Shape (tune in Simpler, tail, clip) BEFORE calibrating. The kick never moves again.</p></div></div>
+  <div class="step"><div class="n">2</div><div><p><b>+ BASS → VU needle bounces into 0…+3 (red zone)</b> on the groove — breathing, not pinned. Tune to kick root · sidechain under kick (stock Comp or Kickstart 2, ~4 dB) · sub mono &lt;120 Hz.</p></div></div>
+  <div class="step"><div class="n">3</div><div><p><b>+ CLAP → solo True Peak −6…−5 (ceiling, not goal).</b> In context: heard clearly, kick stays boss. Summed peak on 2/4 stays ≈ −4 or lower.</p></div></div>
+  <div class="step"><div class="n">4</div><div><p><b>STRESS TEST: trio only → stock Limiter on Main → push to −9…−11 LUFS Short-Term.</b> Listen 30 s: kick still punches? Nothing crushed? Watch PSR: healthy ≈ 9–10 LU, squashed ≤ 6.</p></div></div>
+  <div class="step"><div class="n">5</div><div><p><b>Fix what failed, re-test, then DELETE the limiter.</b> It was only a test. Foundation locked — every later problem is, by elimination, something you added after.</p></div></div>
+  <div class="card"><h3>If the test fails — who's guilty</h3><table>
+    <tr><th>You hear</th><th>Cause</th><th>Fix</th></tr>
+    <tr><td>Kick lost its thump / pumping</td><td>Bass energy eating the limiter</td><td>Less bass sustain · deeper sidechain · bass down</td></tr>
+    <tr><td>Dirt / distortion on bass notes</td><td>Too much sub for the loudness</td><td>Bass level down · tame lowest octave</td></tr>
+    <tr><td>Clap vanished</td><td>All transient, no body</td><td>+250 Hz body — not more volume</td></tr>
+  </table></div>
+  <div class="note"><b>Rule:</b> solo = calibration, context = decision. The kick is the only element fully set in solo.</div>
+</div>
+
+<!-- 5 METERS -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 05</span></div>
+  <div class="ptitle"><h1>Meters</h1><span class="tag">One meter per step · reset before reading</span></div>
+  <div class="card"><h3>Which meter, when</h3><table>
+    <tr><th>Step</th><th>Playing</th><th>Meter</th><th>Target</th></tr>
+    <tr><td><b>Kick</b></td><td>kick solo</td><td>Youlean · True Peak Max</td><td><b>≈ −5.0</b></td></tr>
+    <tr><td><b>Bass</b></td><td>kick + bass</td><td>mvMeter2 · VU needle</td><td><b>swings 0…+3</b></td></tr>
+    <tr><td><b>Clap</b></td><td>clap solo</td><td>Youlean · True Peak Max</td><td><b>−6…−5</b></td></tr>
+    <tr><td><b>Stress test</b></td><td>trio + limiter</td><td>Youlean · Short-Term</td><td><b>−9…−11 LUFS</b></td></tr>
+    <tr><td><b>Punch health</b></td><td>during test</td><td>Youlean · PSR</td><td><b>≥ ~7 LU</b></td></tr>
+    <tr><td><b>Bounce</b></td><td>full mix, no limiter</td><td>Youlean · True Peak Max</td><td><b>≈ −6 headroom</b></td></tr>
+  </table></div>
+  <div class="card"><div class="vu"><h3 style="margin:0 0 2mm;">Reading the VU · 0 VU = −18 dBFS (preset “VU Standard”)</h3>
+    <div class="vubar">
+      <div style="flex:4; background:#3a4466;">−20 … −7 · quiet / solo kick swings here</div>
+      <div style="flex:2; background:#1f8a7d;">−7 … 0 · building</div>
+      <div style="flex:2; background:#c0392b;">0 … +3 · KICK+BASS ZONE</div>
+    </div>
+    <p style="margin-top:2mm;">Needle <b>bounces into red on hits, falls back between</b> = correct. Pinned solid in red = low end too loud or over-compressed. Needle = average energy (what big systems feel); peaks = ceiling only.</p></div></div>
+  <div class="card"><h3>Habits that keep numbers honest</h3>
+  <p>• <b>✕ reset before every measurement</b> — True Peak Max holds forever until reset, including your old, louder mistakes.<br>
+  • Meters sit <b>last</b> on Main; mvMeter2 pre-gain stays at 0 there.<br>
+  • True Peak (Youlean) over Live's sample-peak number — inter-sample peaks read ~0.3–1 dB higher and they're the truth.<br>
+  • SPAN = spectrum shape vs. reference · REFERENCE = level-matched A/B · Tonal Balance 2 = genre curve check.</p></div>
+  <div class="note"><b>Mindset:</b> meters set the skeleton once — then ears and the reference decide. Glance at the needle only when something feels off.</div>
+</div>
+
+<!-- 6 EQ -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 06</span></div>
+  <div class="ptitle"><h1>EQ System</h1><span class="tag">One question: wrong — or nicer?</span></div>
+  <div class="row">
+    <div class="col"><div class="band" style="background:#8e3b4a;"><h3>Something is WRONG → fix it</h3>
+      <p><b>EQ Eight</b> (stock), always. Sweep a narrow +8 dB bell, find the nasty spot, cut 3–6 dB. Mud lives 200–400 · boxy 500–800 · harsh 2–6k. HPF supporting parts ~100–200 Hz.</p>
+      <p><b>Problem comes &amp; goes?</b> → <b>soothe2</b> (auto-finds harshness) or Pro-Q 4 dynamic bands / TDR Nova.</p>
+      <span class="chip stock">EQ Eight ⭐</span><span class="chip">Pro-Q 4</span><span class="chip">soothe2</span><span class="chip">TDR Nova</span></div></div>
+    <div class="col"><div class="band" style="background:#2c6e63;"><h3>Want it NICER → four buttons</h3>
+      <p><b>Lows</b> (kick/bass bigger AND cleaner) → Ozone Vintage EQ: boost + atten same freq.<br>
+      <b>Punch</b> (too polite) → Solid EQ, boost where it lives.<br>
+      <b>Shine</b> (dull top) → Maag Air Band +2–3.<br>
+      <b>Whole group warmer</b> → Passive EQ (broad tube strokes).</p>
+      <span class="chip">Ozone Vintage EQ</span><span class="chip">Solid EQ</span><span class="chip">Maag EQ2</span><span class="chip">Enhanced EQ</span></div></div>
+  </div>
+  <div class="card"><h3>The map</h3><table>
+    <tr><th>Job</th><th>Type</th><th>Tool</th></tr>
+    <tr><td>Cut mud / resonances / HPF</td><td>Transparent</td><td><b>EQ Eight ⭐</b> · Pro-Q 4 (surgical, M/S)</td></tr>
+    <tr><td>Harsh only on loud notes</td><td>Dynamic</td><td><b>soothe2</b> · Nova · Pro-Q 4 dyn</td></tr>
+    <tr><td>Kick/bass glory</td><td>Pultec passive</td><td><b>Ozone 11 Vintage EQ</b> (≈ Enhanced EQ)</td></tr>
+    <tr><td>Drums/synths attitude</td><td>Console (SSL)</td><td><b>NI Solid EQ</b> (E sharp / G smooth)</td></tr>
+    <tr><td>Air without harshness</td><td>Air band</td><td><b>Maag EQ2</b></td></tr>
+    <tr><td>Sweeps &amp; motion</td><td>Filter</td><td><b>Auto Filter ⭐</b> · Volcano 3 · Filtron</td></tr>
+  </table></div>
+  <div class="note"><b>Discipline:</b> cut problems, boost rarely; 2–4 dB moves; wide unless killing a resonance. A track that sounds good after fader balance needs <b>no EQ at all</b>.</div>
+</div>
+
+<!-- 7 COMPRESSORS -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 07</span></div>
+  <div class="ptitle"><h1>Compressors</h1><span class="tag">Seven hands — pick by job, not by habit</span></div>
+  <div class="row"><div class="col">
+    <div class="card"><h3>⚡ FET — lightning</h3><p>Fastest, aggressive color. Drum energy, parallel crush.</p><span class="chip star">UAD 1176</span></div>
+    <div class="card"><h3>💡 Opto — lazy &amp; smooth</h3><p>Light-cell, can't act fast. Invisible vocal/bass leveling.</p><span class="chip star">UAD LA-2A</span><span class="chip">Century (opto)</span></div>
+    <div class="card"><h3>🎛 VCA bus — glue</h3><p>SSL G circuit: a bus breathes as one. 2:1 · atk 10–30 ms · rel Auto · <b>1–2 dB GR only</b>.</p><span class="chip stock">Glue ⭐</span><span class="chip">Solid Bus Comp (same unit)</span></div>
+    <div class="card"><h3>👊 VCA snap — drum punch</h3><p>dbx-style hard knee, decisive grab.</p><span class="chip stock">Compressor (hard/fast)</span><span class="chip">VC 160</span></div>
+  </div><div class="col">
+    <div class="card"><h3>🫖 Vari-mu — thick tube</h3><p>Ratio grows with level; dense "finished" bus. 1–2 dB max.</p><span class="chip star">RoyalCompressor</span></div>
+    <div class="card"><h3>🧮 Digital — invisible</h3><p>Pure math, any speed, zero opinion.</p><span class="chip star">Pro-C 2</span><span class="chip stock">Compressor</span></div>
+    <div class="card"><h3>🎚 Multiband — one hand per band</h3><p>Only one range misbehaves · modern dense pads (OTT Depth 20–30%).</p><span class="chip star">OTT</span><span class="chip">Pro-MB</span><span class="chip">Solid Dynamics (+gate)</span></div>
+    <div class="card"><h3>🧱 Limiter — the wall</h3><p>Infinite ratio. Stress test + mastering ceiling only.</p><span class="chip stock">Limiter ⭐</span><span class="chip">Pro-L 2</span><span class="chip">Ozone Maximizer</span></div>
+  </div></div>
+  <div class="note"><b>Settings compass:</b> control = fast attack/release, high ratio, hard knee · color = slow/low/soft · glue = medium everything, 2:1. Slow attack = MORE punch (the hit escapes). If you can't say which hand you need, you don't need one yet.</div>
+</div>
+
+<!-- 8 SATURATION -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 08</span></div>
+  <div class="ptitle"><h1>Saturation</h1><span class="tag">All of it adds harmonics — ask: how much heat?</span></div>
+  <div class="band" style="background:#9a6b2f;"><h3>🔥 WARM — invisible thickness ("more expensive")</h3>
+    <p>Busses &amp; refinement. You hear it only on bypass. HG-2: Pentode/Triode = flavor, <b>Density = drive both, level-compensated</b>, + Air on drum bus.</p>
+    <span class="chip star">HG-2</span><span class="chip">UAD 610 / Century</span><span class="chip">Saturation Knob</span><span class="chip">SDRR2 Tube</span><span class="chip">LittleRadiator</span><span class="chip stock">Saturator · Soft Sine, low drive</span></div>
+  <div class="band" style="background:#b2552e;"><h3>🔥🔥 HOT — audible character ("more present")</h3>
+    <p>The mixing level. <b>Saturn 2 house trick: saturate bass MIDS only (150 Hz–1 kHz), sub stays clean</b> → audible on phones, no mud.</p>
+    <span class="chip stock">Saturator ⭐</span><span class="chip star">Saturn 2 (multiband)</span><span class="chip">Fresh Air (highs-only)</span><span class="chip">FireCharger</span><span class="chip">RC-20 / Vinyl (texture)</span></div>
+  <div class="band" style="background:#8e3b4a;"><h3>🔥🔥🔥 BURNING — the effect IS the sound ("more dangerous")</h3>
+    <p>Roar = 3 stages, serial/parallel/M-S/multiband routing, tunable feedback, built-in comp + modulation. Growls, builds, destruction.</p>
+    <span class="chip stock">Roar ⭐</span><span class="chip">Cyberdrive Core</span><span class="chip">Electrum / Bassment (amps)</span><span class="chip">SausageFattener (cranked)</span></div>
+  <div class="card"><h3>Grab this when</h3><table>
+    <tr><td><b>Drum bus analog weight</b></td><td>HG-2 · Density + Air</td><td><b>Growl / build / destroy</b></td><td>Roar</td></tr>
+    <tr><td><b>Bass audible on phone</b></td><td>Saturn 2 mids band</td><td><b>Vintage texture</b></td><td>RC-20 · Vinyl</td></tr>
+    <tr><td><b>One sound, more presence</b></td><td>Saturator</td><td><b>2-bus final thickness</b></td><td>HG-2, barely on</td></tr>
+  </table></div>
+  <div class="note"><b>Discipline:</b> count heat sources per path — one deliberate saturator beats four accidental ones. Clippers (KClip 3, KNOCK, GClip, Mesa Lite) are peak-shaving dynamics tools, not tone.</div>
+</div>
+
+<!-- 9 REVERB & DELAY -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 09</span></div>
+  <div class="ptitle"><h1>Reverb &amp; Delay</h1><span class="tag">Type → where → settings @ 124 BPM</span></div>
+  <div class="card"><h3>Placement rule</h3><p>Shared space, mixable wetness → <b>return (100% wet, EQ before: HPF ~300)</b>. Reverb that becomes the sound (freeze, design) → <b>insert</b>. In doubt → return.</p></div>
+  <div class="card"><table>
+    <tr><th>Type</th><th>Use when</th><th>Where</th><th>Settings</th><th>Tool</th></tr>
+    <tr><td><b>Ambience / room</b></td><td>glue, invisible depth — everything</td><td>Return A</td><td>250–750 ms · pre 2–25</td><td>Hybrid Reverb ⭐ / ValhallaRoom</td></tr>
+    <tr><td><b>Plate</b></td><td>claps, vocal chops, rich leads</td><td>Return</td><td>1–2 s · pre 30–60</td><td>ValhallaPlate / VVV-Plate</td></tr>
+    <tr><td><b>Hall</b></td><td>melodic leads, breakdowns</td><td>Return</td><td>2–4 s · pre 60–100 · duck it</td><td>VVV-Hall</td></tr>
+    <tr><td><b>Shimmer</b></td><td>angelic breakdown pads — sparingly</td><td>Insert on duplicate</td><td>long, blended under</td><td>ValhallaShimmer</td></tr>
+    <tr><td><b>Freeze / creative</b></td><td>one chord → endless pad, risers</td><td>Insert</td><td>freeze → resample</td><td>Raum / Supermassive</td></tr>
+    <tr><td><b>Nonlinear / gated</b></td><td>80s clap drama</td><td>Either</td><td>short, abrupt</td><td>VVV-Nonlin</td></tr>
+  </table></div>
+  <div class="card"><h3>The two-return system (set once, in the template)</h3>
+  <p><b>A "Ambience":</b> small room 250–750 ms — everything sends a little; placement, not effect. <b>B "Lead Verb":</b> VintageVerb plate/hall 1.2–2.5 s, pre-delay ~60 ms, <b>sidechain-ducked by the lead</b> (comp after reverb, 3–6 dB, rel 200–400 ms) — big AND clear.</p></div>
+  <div class="card"><h3>Delay types</h3><table>
+    <tr><td><b>Dotted-8th dub</b></td><td>the genre default — stabs, vocals</td><td>Echo ⭐ (synced) / EchoBoy (character)</td></tr>
+    <tr><td><b>Unlinked stereo</b></td><td>width: L 50–200 ms, R +20–50 ms, fb 0–15%</td><td>Echo / Replika</td></tr>
+    <tr><td><b>Creative / diffused</b></td><td>echoes that evolve into texture</td><td>Timeless 3 / HyperspaceCore</td></tr>
+  </table></div>
+  <div class="note"><b>Mistakes:</b> judging tails in solo (decide in context) · dry signal inside a return (phasey doubles) · tails not printed when bouncing a clip (record 2 extra bars).</div>
+</div>
+
+<!-- 10 MIXING THE TRACKS -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 10</span></div>
+  <div class="ptitle"><h1>Mixing the Tracks</h1><span class="tag">Lead first · faders before plugins</span></div>
+  <div class="row"><div class="col">
+    <div class="step"><div class="n">1</div><div><p><b>Lead in first:</b> up-front = 1–2 dB above the clap; tucked = 1–2 dB below.</p></div></div>
+    <div class="step"><div class="n">2</div><div><p><b>Everything else one at a time, faders only.</b> Supporting parts 1 dB quieter than you think. This static balance is 70% of the mix.</p></div></div>
+  </div><div class="col">
+    <div class="step"><div class="n">3</div><div><p><b>Fix only what's broken</b> (EQ page 06, comps page 07). Good after balance = done. Many tracks need nothing.</p></div></div>
+    <div class="step"><div class="n">4</div><div><p><b>Reference check:</b> level-matched; ask low end / lead level / brightness. Fix the biggest gap, stop after 2–3 rounds.</p></div></div>
+  </div></div>
+  <div class="card"><h3>Common problems → exact move</h3><table>
+    <tr><th>Element</th><th>Symptom</th><th>Move</th></tr>
+    <tr><td rowspan="2"><b>Kick</b></td><td>No low end / not forward</td><td>+40–60 Hz or saturate · transient shaper for attack</td></tr>
+    <tr><td>Too long / hollow</td><td>Shorten tail (ShaperBox curve) · don't over-cut 150–250</td></tr>
+    <tr><td rowspan="2"><b>Clap</b></td><td>Thin / buried</td><td>+250 Hz body · brightness or saturation up top</td></tr>
+    <tr><td>Too dry / too wet</td><td>Plate send · gate the tail</td></tr>
+    <tr><td rowspan="2"><b>Bass</b></td><td>Clashing with kick</td><td>Sidechain to kick · tune to root</td></tr>
+    <tr><td>Invisible on phones</td><td>Saturn 2 mids · boost mids, never sub</td></tr>
+    <tr><td rowspan="2"><b>Lead/Vocal</b></td><td>Harsh</td><td>soothe2 / Pro-DS · dip 5–10 kHz</td></tr>
+    <tr><td>Buried</td><td>Cut 1–3 kHz in the masker — not more lead volume</td></tr>
+    <tr><td><b>Anything</b></td><td>Muddy mix</td><td>Cut 200–400 Hz in the competitors · HPF supports</td></tr>
+  </table></div>
+  <div class="note"><b>Clarity comes from subtraction</b> — mute or filter non-essentials before reaching for processing. The arrangement is the biggest EQ.</div>
+</div>
+
+<!-- 11 DRUM BUS -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 11</span></div>
+  <div class="ptitle"><h1>Drum Bus &amp; Punch</h1><span class="tag">Kick stays OUT of the bus</span></div>
+  <div class="card"><h3>The chain (2–3 devices, not five)</h3>
+  <p><b>1 · EQ Eight:</b> HPF 100–120 (no kick in here) · tame 3–5k if harsh · tiny shelf +1–2 dB @ 8–10k if dull.<br>
+  <b>2 · Glue:</b> 2:1, atk 10–30 ms, rel Auto, <span class="coral">1–2 dB GR</span>. Bypass test: on = "a kit", off = "files".<br>
+  <b>3 · Color (optional):</b> Drum Buss ⭐ (Drive + Crunch, Boom OFF, 30–50% wet) or HG-2 (Density + Air) / SausageFattener (low).<br>
+  <b>Groove first:</b> velocities vary, 16th swing 10–20%, off-beat hats quieter — no plugin fixes a stiff pattern.</p></div>
+  <div class="card"><h3>Transient tools — which kind</h3><table>
+    <tr><th>Kind</th><th>Behavior</th><th>Tools</th></tr>
+    <tr><td><b>Curve/LFO (deterministic)</b></td><td>Same shape every hit — peaks can't wobble. Tail shortening, pump.</td><td><b>ShaperBox 3 ⭐</b> · Gatekeeper · LFOTool · Kickstart 2</td></tr>
+    <tr><td><b>Detector shapers</b></td><td>React to the hit — musical, can breathe on deep settings.</td><td>Drum Buss ⭐ (stock) · Trinity Shaper (atk/body/sus, gentle!) · HelperTransients2 · SPL Attacker · Transient Master</td></tr>
+    <tr><td><b>One-knob punch</b></td><td>Instant slap + saturation.</td><td>UrbanPuncher</td></tr>
+    <tr><td><b>Clipper after</b></td><td>Pins every hit to the same ceiling.</td><td>KClip 3 · KNOCK · Saturator-clip ⭐</td></tr>
+  </table></div>
+  <div class="card"><h3>Printing through a group (commit moves)</h3>
+  <p>New audio track → Audio From: <b>group · Post Mixer</b> → Monitor Off → arm → record (+2 bars for tails). Captures group FX + upstream automation; <b>returns and downstream are NOT included</b>. Freeze inside a group ignores group FX. Keep sources muted in _PARKED — the print is commitment, the source is the undo.</p></div>
+  <div class="note"><b>Mistakes:</b> over-gluing (4+ dB kills hats) · kick inside a glued bus (undiagnosable pumping) · fixing one bad element on the whole bus.</div>
+</div>
+
+<!-- 12 SPACE WIDTH STORY -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 12</span></div>
+  <div class="ptitle"><h1>Space, Width &amp; Story</h1><span class="tag">Where things sit · how the track moves</span></div>
+  <div class="row"><div class="col"><div class="card"><h3>Panning — LCR, house edition</h3>
+    <p><b>Center + mono, always:</b> kick · bass/sub · lead · clap · vocal.<br><b>Sides:</b> hats, shakers, percs, synth layers — hard L/R or halfway; pairs mirrored.<br><b>1–2 elements at half-pan</b> fill the field. Width is contrast: wide works because the center is solid.</p></div>
+    <div class="card"><h3>Width tools</h3><p>Utility ⭐ (width %, mono maker &lt;120 Hz) · Ozone Imager 2 · Wider · Wide Awake (Dada Life) · unlinked delay (p. 09). <b>Mono check 10 s before every bounce</b> — nothing important may vanish.</p></div></div>
+  <div class="col"><div class="card"><h3>Movement &amp; builds</h3>
+    <p><b>Pump:</b> Kickstart 2 ⭐ (one knob) · ShaperBox volume curve (drawn) · stock sidechain comp (transparent).<br>
+    <b>Filter motion:</b> Auto Filter ⭐ · Volcano 3 · Supermodal.<br>
+    <b>Risers/FX:</b> Endless Smile (one-knob build) · Eternal Return (riser) · RVRSE (reverse-verb riser) · Raum freeze · Movement (rhythmic texture).</p></div>
+    <div class="card"><h3>The story (Phase 3 truth)</h3><p>Mix in the <b>arrangement, not the loop</b>: automate send levels + filters into/out of sections · reverb throw on the last clap before the drop · drums dip in breaks · re-establish hierarchy when flat — <b>the hook leads</b>.</p></div></div></div>
+  <div class="note"><b>Contrast is energy:</b> dry vs wet, bright vs dark, narrow vs wide between sections beats any single loud moment. Mixing is emotional storytelling with volume.</div>
+</div>
+
+<!-- 13 DAILY LOADOUT -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 13</span></div>
+  <div class="ptitle"><h1>Daily Loadout &amp; Targets</h1><span class="tag">The one-page session card</span></div>
+  <div class="card"><h3>The 12 tools that are 90% of a session</h3>
+  <span class="chip stock">EQ Eight</span><span class="chip stock">Glue</span><span class="chip stock">Saturator</span><span class="chip stock">Limiter</span><span class="chip stock">Auto Filter</span><span class="chip stock">Hybrid Reverb</span><span class="chip stock">Echo</span><span class="chip stock">Utility</span>
+  <span class="chip star">Pro-Q 4</span><span class="chip star">soothe2</span><span class="chip star">Pro-C 2</span><span class="chip star">Saturn 2</span><span class="chip star">ShaperBox 3</span><span class="chip star">VintageVerb</span><span class="chip star">EchoBoy</span><span class="chip star">OTT</span><span class="chip star">mvMeter2 + Youlean</span></div>
+  <div class="row"><div class="col"><div class="card"><h3>Element targets</h3>
+    <div class="kv"><b>Kick (solo)</b><span>≤ −5 dBFS TP</span></div>
+    <div class="kv"><b>Kick + bass</b><span>VU 0…+3</span></div>
+    <div class="kv"><b>Clap (solo)</b><span>−6…−5 TP</span></div>
+    <div class="kv"><b>Stress test</b><span>−9…−11 LUFS ST</span></div>
+    <div class="kv"><b>PSR during test</b><span>≥ ~7 LU</span></div>
+    <div class="kv"><b>Channel peaks</b><span>−30…−6 dBFS</span></div>
+    <div class="kv"><b>Bounce headroom</b><span>≈ −6 dBFS</span></div>
+    <div class="kv"><b>Sub mono below</b><span>~120 Hz</span></div></div></div>
+  <div class="col"><div class="card"><h3>Bounce checklist</h3>
+    <p>☐ Nothing on Main (limiter deleted)<br>☐ ✕ reset → full pass → TP Max ≈ −6<br>☐ Mono check · whisper-volume check · phone check<br>☐ Reference A/B, level-matched (5 questions: balance · loudest · spectrum · dynamics · space)<br>☐ Tails: let the end ring out past the last note<br>☐ Export WAV · master another day, fresh ears</p></div>
+    <div class="card"><h3>Session hygiene</h3><p>One change at a time · solo to calibrate, context to decide · ear break every 45 min · arrangement, not the 8-bar loop.</p></div></div></div>
+  <div class="note"><b>If you remember one sentence:</b> foundation by meters, balance by faders, fix only what's broken, season rarely, verify against the reference.</div>
+</div>
+
+<!-- 14 APPENDIX A SOURCES -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 14 · APPENDIX A</span></div>
+  <div class="ptitle"><h1>Sound Sources</h1><span class="tag">Synths &amp; instruments by role</span></div>
+  <div class="card"><h3>Deep sound design</h3><p>Serum 2 ⭐ (+Serum) · Vital · Zebra2 · Voltage Modular (+FX)</p>
+  <h3 style="margin-top:2.5mm;">Analog character</h3><p>Diva ⭐ (melodic house leads/pads) · TyrellN6 · MG-1 Plus · UAD PolyMAX · AIR Jura (Juno-60)</p>
+  <h3 style="margin-top:2.5mm;">Fast preset players</h3><p>Nexus · Analog Lab V · SynthMaster One · Usynth (Titles inside one plugin) · Splice Astra · SyndtSphere</p></div>
+  <div class="card"><h3>Keys &amp; acoustic</h3><p>Keyscape ⭐ · Addictive Keys · MiniGrand · Velvet (electric pianos) · M1 (house piano/organ heritage!) · LABS (free textures, lives in Splice INSTRUMENT)</p>
+  <h3 style="margin-top:2.5mm;">Samplers &amp; platforms</h3><p>Simpler/Sampler ⭐ (stock — kick tuning home) · Kontakt 7/8 · CUBE (Lunacy) · Reason Rack Plugin · Splice INSTRUMENT/Sounds/Bridge</p>
+  <h3 style="margin-top:2.5mm;">UJAM performers</h3><p>Virtual Bassist ROWDY 2 · Groovemate ONE (shaker/clap grooves, MIDI drag-out) · Finisher MICRO/RETRO (multi-FX)</p></div>
+  <div class="card"><h3>Racks on the SSD (/Volumes/PortableSSD/Music PROD)</h3>
+  <p><b>_ORGANIZED:</b> BASS 54 · DRUMS 43 · MIXING 28 · ARPS&amp;KEYS 24 · FX 22 · SOUND DESIGN 21 · VOCALS 18 · LEADS 9 · MASTERING 5 · PADS 4. <b>PML:</b> Melodic Techno MINI V3 (107) · Melodic Deep (59) · Fejka (5). Mount the SSD or they don't load.</p></div>
+  <div class="note"><b>Stock first, here too:</b> Operator, Wavetable, Analog, Drift cover a full tech house record. Reach for third-party when the sound in your head names it.</div>
+</div>
+
+<!-- 15 APPENDIX B FX -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 15 · APPENDIX B</span></div>
+  <div class="ptitle"><h1>FX Roster</h1><span class="tag">Everything else, by job</span></div>
+  <div class="card"><h3>Vocals</h3><p><b>Tune:</b> Auto-Tune Artist (live-style) · Melodyne (surgical, per-note) · Little AlterBoy (formant/character). <b>Repair:</b> RX 11 suite (De-ess/De-click/De-reverb/Voice De-noise…). <b>Thicken:</b> Vocal Doubler · LUX Vocal Preamp · QuickVox Core (strip). <b>Chain recipe:</b> p. 09 delay + plate.</p></div>
+  <div class="card"><h3>Lo-fi &amp; texture</h3><p>RC-20 ⭐ (noise/wobble/dust) · Vinyl · Redux (stock bitcrush) · ThingsTexture (granular verb) · Retromulator (ROM synth-emulator — needs ROMs)</p>
+  <h3 style="margin-top:2.5mm;">Mangling &amp; weird</h3><p>Roar ⭐ · Manipulator (pitch/formant mangler) · Freq Shifter (stock) · Power Grid Disruptor (glitch/stutter) · KrystalField · Supermodal (modal body)</p></div>
+  <div class="card"><h3>Mod FX</h3><p>Chorus-Ensemble ⭐ / Phaser-Flanger ⭐ (stock) · Retronaut Core (vintage chorus + wow/flutter) · Orbitron Core · UberMod / SpaceModulator (Valhalla weirdness) · FreqEcho (dub shifter-echo)</p>
+  <h3 style="margin-top:2.5mm;">Mastering suite (Ozone 11 by job)</h3><p>Maximizer (ceiling) · Clarity + Stabilizer (spectral balance) · Low End Focus · Imager (width/band) · Impact (micro-dynamics) · Match EQ (reference curve) · Vintage Comp/EQ/Limiter/Tape (color) — with Tonal Balance 2 as the judge.</p></div>
+  <div class="card"><h3>Monitoring ≠ mixing</h3><p>SIENNA GURU/ROOMS = headphone room simulation — monitoring chain only, <b>bypass before export</b>. REFERENCE = A/B tool. Insight 2/SPAN/MiniMeters = meters, last on Main.</p></div>
+  <div class="note"><b>Open items:</b> Decapitone — unidentified, check its GUI in Live before using · WaveShells 15.5–17.1 — which Waves plugins are licensed is unknown; check the Live browser.</div>
+</div>
+
+<!-- 16 BACK PAGE -->
+<div class="page">
+  <div class="phead"><span><b>ZIZZ</b> · PRODUCTION BINDER</span><span>PAGE 16 · BACK</span></div>
+  <div class="ptitle"><h1>The Numbers</h1><span class="tag">If the binder were one page, it's this one</span></div>
+  <div class="card"><table>
+    <tr><th>Moment</th><th>Rule</th></tr>
+    <tr><td><b>Setup</b></td><td>Channels peak −30…−6 · faders 0 · master 0 · buffer 1024 · REF muted at −6…−8</td></tr>
+    <tr><td><b>Kick</b></td><td>True Peak ≤ −5 (Youlean, ✕ first) · tuned to the key · never moves again</td></tr>
+    <tr><td><b>Bass</b></td><td>VU needle 0…+3 with kick · tuned · sidechained · sub mono &lt;120 Hz</td></tr>
+    <tr><td><b>Clap</b></td><td>−6…−5 solo · ear decides in context · summed ≤ ≈−4</td></tr>
+    <tr><td><b>Stress test</b></td><td>Trio + Limiter → −9…−11 LUFS ST · PSR ≥ ~7 · then DELETE the limiter</td></tr>
+    <tr><td><b>Balance</b></td><td>Lead ±1–2 dB vs clap · everything else faders-only first</td></tr>
+    <tr><td><b>EQ</b></td><td>Wrong → EQ Eight (comes &amp; goes → soothe2) · Nicer → lows/punch/shine/group</td></tr>
+    <tr><td><b>Compress</b></td><td>Name the hand first · bus glue 1–2 dB · slow attack = punch</td></tr>
+    <tr><td><b>Saturate</b></td><td>Expensive → HG-2 · Present → Saturator/Saturn 2 · Dangerous → Roar · one heat source per path</td></tr>
+    <tr><td><b>Space</b></td><td>Two returns, 100% wet, EQ'd · duck the lead verb · low end + lead mono center</td></tr>
+    <tr><td><b>Bounce</b></td><td>Nothing on Main · ≈ −6 dBFS TP headroom · mono + phone check · master later</td></tr>
+  </table></div>
+  <div class="card"><h3>The three questions behind every plugin choice</h3>
+  <p><b>EQ:</b> wrong or nicer? · <b>Compression:</b> which hand? · <b>Saturation:</b> how much heat?</p></div>
+  <div class="note" style="text-align:center;"><b>Foundation by meters · balance by faders · fix only what's broken · season rarely · verify against the reference.</b><br>Living document — regenerate from the repo after updates.</div>
+</div>
+
+</body></html>

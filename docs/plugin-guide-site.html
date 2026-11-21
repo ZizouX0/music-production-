@@ -1,0 +1,480 @@
+<title>Zizz Plugin Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: dark binder identity — category grid home, hash-routed category pages, card lists */
+:root{
+  --bg:#10152e; --bg2:#1a2042; --card:#ffffff; --ink:#1c2340; --ink2:#4a5170;
+  --fg:#e8eaf5; --dim:#8a91b4; --gold:#d9a441; --coral:#e85a6a; --teal:#1f8a7d;
+  --line:#e3e6f0; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:linear-gradient(165deg,#10152e 0%,#1a1f3d 60%,#221a3d 100%) fixed, var(--bg);
+  background-color:var(--bg); color:var(--fg);
+  font-family:Inter,system-ui,-apple-system,sans-serif; font-size:15px; line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 40px;
+}
+.wrap{max-width:1060px;margin:0 auto}
+header.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 18px;padding:26px 0 6px}
+.brand{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;letter-spacing:3px;color:var(--gold);font-size:13px;cursor:pointer}
+.brand span{color:var(--dim);font-weight:500}
+h1.pagetitle{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,4.5vw,38px);margin:6px 0 2px;letter-spacing:.5px;text-wrap:balance}
+.sub{color:var(--dim);margin:0 0 18px;max-width:62ch}
+.searchbar{display:flex;gap:10px;margin:4px 0 22px}
+.searchbar input{flex:1;min-width:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;color:var(--fg);padding:11px 14px;font:inherit}
+.searchbar input::placeholder{color:var(--dim)}
+.searchbar input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;padding-bottom:30px}
+.cat{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;cursor:pointer;display:flex;flex-direction:column;gap:8px;transition:border-color .15s, transform .15s}
+.cat:hover,.cat:focus-visible{border-color:var(--gold);transform:translateY(-2px);outline:none}
+.mono{align-self:flex-start;background:var(--gold);color:var(--ink);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;border-radius:7px;padding:4px 8px}
+.cat h2{margin:0;font-family:'Space Grotesk',sans-serif;font-size:17px}
+.cat p{margin:0;color:var(--dim);font-size:13px;line-height:1.45}
+.cat .count{margin-top:auto;color:var(--gold);font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+.back{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid rgba(255,255,255,.2);color:var(--fg);border-radius:9px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer;margin:14px 0 4px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+.reach{background:rgba(217,164,65,.1);border-left:3px solid var(--gold);border-radius:8px;padding:10px 14px;color:#e9dcbe;font-size:14px;margin:12px 0 20px;max-width:75ch}
+.reach b{color:var(--gold)}
+section.block{background:var(--card);color:var(--ink);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+section.block>h3{margin:0 0 2px;font-family:'Space Grotesk',sans-serif;font-size:17px;color:var(--ink)}
+section.block>.blurb{margin:0 0 12px;color:var(--ink2);font-size:13.5px;max-width:75ch}
+.plug{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:9px 0;border-top:1px solid var(--line)}
+.plug:first-of-type{border-top:none}
+.pname{font-weight:700;font-size:14.5px;color:var(--ink);white-space:nowrap}
+.badge{font-size:10.5px;font-weight:700;letter-spacing:1px;border-radius:20px;padding:2px 9px;text-transform:uppercase}
+.b2{background:var(--teal);color:#fff}
+.b1{background:var(--gold);color:var(--ink)}
+.b0{background:#eef0f8;color:var(--ink2);border:1px solid var(--line)}
+.ptext{flex:1 1 320px;min-width:0;color:var(--ink2);font-size:13.5px;line-height:1.5}
+.ptext b{color:var(--ink)}
+.rule{background:rgba(255,255,255,.07);border-radius:10px;padding:12px 16px;color:var(--dim);font-size:13.5px;margin:4px 0 30px;max-width:80ch}
+.rule b{color:var(--gold)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.legend .badge{font-size:11px}
+.legend span.lbl{color:var(--dim);font-size:12.5px;align-self:center}
+mark{background:rgba(217,164,65,.45);color:inherit;border-radius:3px;padding:0 1px}
+.noresults{color:var(--dim);padding:30px 0;text-align:center}
+.resgroup{color:var(--gold);font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:22px 0 8px}
+footer{color:var(--dim);font-size:12.5px;padding:10px 0 26px;max-width:80ch}
+footer b{color:var(--gold)}
+a{color:var(--gold)}
+@media (prefers-reduced-motion: reduce){.cat{transition:none}}
+@media (max-width:480px){.plug{padding:11px 0}.pname{white-space:normal}}
+button:focus-visible,.cat:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="brand" id="homebtn" tabindex="0" role="button">ZIZZ <span>· PLUGIN GUIDE</span></div>
+</header>
+<main id="app"></main>
+<footer>
+  <b>Three-option rule:</b> stock Ableton first · owned plugin when it genuinely beats stock · racks last.
+  Built from the music-production repo inventory (2026-11-21 scan, 219 plugins). Companion to the Production Binder PDF.
+</footer>
+</div>
+
+<script>
+const DATA=[
+{id:"eq",m:"EQ",t:"EQ",tag:"One question: is something WRONG, or do I want it NICER?",
+ reach:"<b>Wrong</b> → cut it with a transparent EQ. <b>Comes & goes</b> → dynamic. <b>Nicer</b> → pick the flavor: lows, punch, shine, or whole-group warmth.",
+ rule:"Cut problems, boost rarely. 2–4 dB moves, wide unless killing a resonance. A track that sounds good after fader balance needs no EQ at all.",
+ secs:[
+ {h:"Transparent — fix what's wrong",b:"Changes only what you touch. Mud 200–400 · boxy 500–800 · harsh 2–6k · HPF supports at 100–200 Hz.",p:[
+  ["EQ Eight",2,"The daily driver. Sweep a narrow +8 dB bell, find the nasty spot, cut 3–6 dB. Mid/side, 8 bands, free."],
+  ["FabFilter Pro-Q 4",1,"The deluxe scalpel: dynamic bands, spectrum grab, collision view between instances, EQ match. When EQ Eight runs out of hands."],
+  ["FabFilter Pro-Q 2 / Q 3",0,"Older versions of the same — use Q4."]]},
+ {h:"Dynamic — problems that come and go",b:"Bands that act only when the problem appears: harshness on loud notes, one booming bass pitch.",p:[
+  ["soothe2",1,"Finds and softens harshness by itself. The fire extinguisher for hats, vocals, cymbal-heavy loops. Depth low, listen with Delta."],
+  ["TDR Nova",0,"Free dynamic EQ — manual version of the same idea, very clean."],
+  ["Ozone 11 Dynamic EQ",0,"Same job with a mastering accent, lives in the Ozone ecosystem."]]},
+ {h:"Character — make it nicer",b:"EQ plus pleasant circuit color. Positive moves only; surgery stays transparent.",p:[
+  ["Ozone 11 Vintage EQ",1,"Pultec-style: boost AND cut the same low frequency → kick/bass gets bigger and cleaner at once. Silky high boost too."],
+  ["NI Solid EQ",1,"SSL console channel EQ: punchy, forward, slightly angry boosts. Drums and synths that sound too polite. E = sharp, G = smooth."],
+  ["Maag EQ2",1,"The Air Band: one shelf at 10–40 kHz that adds shine without harshness. Hats, claps, drum bus, master. +2–3 dB, done."],
+  ["MIXROOM",0,"Shows target curves to guide your EQ — training wheels with good taste."],
+  ["NI Enhanced EQ",0,"Second Pultec-style tube EQ (Softube-modeled, 3 bands with the boost+cut low trick) — A/B against Ozone Vintage EQ, keep your favorite. Not yet in the last scan — verify install."]]},
+ {h:"Filters — motion, not correction",b:"Cut everything above/below a point, with resonance, made to be automated.",p:[
+  ["Auto Filter",2,"The sweep and build-up tool. Automate cutoff into and out of sections."],
+  ["FabFilter Volcano 3",0,"Filter with drive, character and modulation — when the filter should be a sound."],
+  ["FabFilter Simplon / Micro",0,"Quick simple filters, low CPU."],
+  ["Filtron",0,"Polyverse SVF, designed to be driven by Gatekeeper."]]}]},
+
+{id:"comp",m:"CM",t:"Compressors",tag:"Seven hands — name the hand before touching a knob.",
+ reach:"A compressor is a robot hand on a fader. The types are different hands: how fast, how smooth, what color. <b>If you can't name which hand you need, you don't need one yet.</b>",
+ rule:"Control = fast attack/release, high ratio, hard knee. Color = slow/low/soft. Glue = medium everything, 2:1, 1–2 dB. Slow attack = MORE punch — the hit escapes.",
+ secs:[
+ {h:"FET — the lightning hand",b:"Fastest reaction, aggressive color. Energy and attitude.",p:[
+  ["UAD 1176",1,"The real thing (Rev E). Claps and drums that need anger, parallel drum crush, aggressive vocal moments. All-buttons mode = explosion."]]},
+ {h:"Opto — the lazy smooth hand",b:"A light cell that physically can't react fast. Gentle, invisible leveling.",p:[
+  ["UAD LA-2A",1,"Two knobs, zero thinking: vocals and bass held steady without anyone hearing it work. Never for punch."],
+  ["UAD Century (opto section)",0,"Same species inside the channel strip."]]},
+ {h:"VCA — the precise hand",b:"Clean, obedient, does exactly what the knobs say.",p:[
+  ["Glue Compressor",2,"IS the SSL G bus compressor (Cytomic model). Drum bus: 2:1, attack 10–30 ms, release Auto, 1–2 dB of reduction. The kit becomes one organism."],
+  ["Compressor",2,"Hard knee + fast times = dbx-style drum snap. Sidechain mode = the ducking workhorse."],
+  ["NI Solid Bus Comp",0,"Same SSL G circuit as Glue — redundant, prefer Glue."],
+  ["NI Solid Dynamics",0,"SSL channel comp + gate, fast console workflow."],
+  ["NI VC 160",0,"dbx 160 model: hard, decisive drum grab — the VCA-snap flavor as a dedicated box."]]},
+ {h:"Vari-mu — the thick tube hand",b:"The tube itself compresses; ratio grows with level. Dense, finished, expensive.",p:[
+  ["RoyalCompressor",1,"British tube units of the Beatles era. Mixbus or music bus at 1–2 dB — thickness, not control."]]},
+ {h:"Digital — the invisible hand",b:"Pure math. Any speed, lookahead, no opinion.",p:[
+  ["FabFilter Pro-C 2",1,"Clean control with style modes, superb metering. 'Just control it, don't color it.'"],
+  ["Supercharger",0,"One-knob tube-style squeeze — quick thickener, not a precision tool."],
+  ["FirePresser",0,"Four classic compressor emulations blended on one dial — color buffet."]]},
+ {h:"Multiband — one hand per band",b:"Compress lows, mids, highs separately.",p:[
+  ["OTT",1,"THE melodic techno pad sound. Depth 20–30%, never 100. Up+down compression in three bands."],
+  ["FabFilter Pro-MB",0,"The surgical multiband — when exactly one frequency range misbehaves."],
+  ["Multiband Dynamics",2,"Stock does OTT's trick too (OTT is literally its preset concept)."]]},
+ {h:"Limiters — the wall",b:"Infinite ratio. Ceilings only: the stress test and mastering.",p:[
+  ["Limiter",2,"The stress-test tool: push the foundation to −9…−11 LUFS short-term, listen, then DELETE it."],
+  ["FabFilter Pro-L 2",1,"Transparent loudness with style modes and proper metering — the mastering ceiling."],
+  ["Ozone 11 Maximizer",0,"IRC algorithms inside the Ozone chain."]]}]},
+
+{id:"sat",m:"SA",t:"Saturation",tag:"All of it adds harmonics. Ask: how much heat?",
+ reach:"<b>Warm</b> = invisible thickness (you hear it on bypass). <b>Hot</b> = audible character. <b>Burning</b> = the effect IS the sound. Count your heat sources — one deliberate saturator per path beats four accidental ones.",
+ rule:"HG-2 = 'more expensive' · Saturator = 'more present' · Roar = 'more dangerous'. Clippers are peak-shaving dynamics tools, not tone.",
+ secs:[
+ {h:"Warm — invisible thickness",b:"Busses and refinement. Politely dense, never angry.",p:[
+  ["Black Box HG-2",1,"Multi-stage tube density for busses and bass. Pentode/Triode = flavor; Density = drive both, level-compensated; Air = sheen. Drum bus and 2-bus king."],
+  ["Saturator",2,"Soft Sine, low drive = stock warm. The first grab for one sound needing a little body."],
+  ["UAD 610 / Century",0,"Tube preamp color per track — 'recorded through a real desk'."],
+  ["Saturation Knob",0,"Free Softube one-knob warmer, keep-it-simple option."],
+  ["SDRR2 Tube",0,"Klanghelm tube stage, subtle drive."],
+  ["LittleRadiator",0,"Soundtoys tube preamp push — vocals and keys."]]},
+ {h:"Hot — audible character",b:"The main mixing level: presence, edge, body you can hear.",p:[
+  ["Saturator",2,"Curve + Drive: Soft Sine warm → Hard Curve edgy. The per-sound workhorse."],
+  ["FabFilter Saturn 2",1,"Multiband saturation — THE house trick: drive the bass mids (150 Hz–1 kHz) while the sub stays clean. Audible on phones, zero mud."],
+  ["Fresh Air",0,"Exciter: generates new HIGH harmonics only. Dull hats and vocals wake up."],
+  ["FireCharger",0,"United's charger/enhancer — instant presence, less control."],
+  ["RC-20 Retro Color",0,"Texture, not drive: noise, wobble, dust. 'Old', not 'hot'."]]},
+ {h:"Burning — the effect is the sound",b:"Sound design, aggression, destruction.",p:[
+  ["Roar",2,"Live 12's distortion lab: 3 stages, serial/parallel/M-S/multiband routing, tunable feedback, built-in comp and modulation. Growls, builds, mangling."],
+  ["Cyberdrive Core",0,"Multi-mode distortion box, simpler than Roar."],
+  ["Electrum / Bassment Cores",0,"Guitar/bass amp sims — speaker-cab color on keys and loops."],
+  ["SausageFattener",0,"Dirty loudness glue. Low = thick, cranked = chaos."]]}]},
+
+{id:"trans",m:"TR",t:"Transients & Punch",tag:"Shape the hit — by curve, by detector, or by one knob.",
+ reach:"Curve tools apply the <b>same shape every hit</b> (peaks can't wobble). Detector tools react to the hit (musical, can breathe on deep settings). Clipper after = every hit exits at the same ceiling.",
+ rule:"For tech house consistency, curve-based beats detector-based on kicks. Trinity breathing? Gentler cuts, Limit off, or switch to a ShaperBox curve.",
+ secs:[
+ {h:"Curve / LFO — deterministic",b:"Drawn volume shapes locked to the beat. Identical every hit, by definition.",p:[
+  ["ShaperBox 3",1,"11 shapers (Volume, Filter, Pitch, Drive…), multiband, drawable curves. Kick tail shortening and pump with zero wobble."],
+  ["Gatekeeper",0,"Polyverse volume sequencer — hard rhythmic gating patterns."],
+  ["LFOTool",0,"The classic curve utility — pump and tremolo."],
+  ["Kickstart 2",0,"One knob of sidechain pump. Fastest ducking in the west."]]},
+ {h:"Detector shapers — react to the hit",b:"Attack/sustain processing driven by what arrives.",p:[
+  ["Drum Buss",2,"Transients knob up = more hit, down = softer; plus Drive, Crunch, Boom, Decay. The stock answer for 'kick needs more punch'."],
+  ["TBTECH Trinity Shaper",1,"Attack / Body / Sustain stages, multiband, sidechain EQ, limiter. The kick surgeon — keep cuts moderate."],
+  ["HelperTransients2",0,"Just Attack + Sustain knobs. The simple direct swap for Smack-Attack-style jobs."],
+  ["SPL Attacker Plus",0,"One knob, attack-only, level-independent, built-in peak catcher. Claps and hats."],
+  ["NI Transient Master",0,"Basic attack/sustain — covered by the above."]]},
+ {h:"One-knob punch",b:"Instant slap with saturation baked in.",p:[
+  ["UrbanPuncher",0,"Punch knob + saturation + Destroy button. Parallel-style drum slap in seconds."]]}]},
+
+{id:"clip",m:"CL",t:"Clippers & Limiters",tag:"Ceiling tools: shave or wall.",
+ reach:"A <b>clipper</b> chops peaks off (drums keep punch, gain headroom). A <b>limiter</b> turns them down (transparent ceiling). Drums love clippers; masters need limiters.",
+ rule:"Clipper after a transient shaper pins every hit to the identical peak — the cure for wobbling kick levels.",
+ secs:[
+ {h:"Clippers",b:"Shave the spike, keep the energy.",p:[
+  ["Saturator (clip mode)",2,"Hard clip curve = stock clipper. Fine for most jobs."],
+  ["KClip 3",1,"The mastering-grade clipper: 8 soft modes, oversampling, LUFS targeting. Drum bus and pre-limiter."],
+  ["KNOCK Clipper",0,"DECAP's drum clipper — modern punch flavor."],
+  ["GClip / FreeClip / Mesa Lite / KrystalClip",0,"Free simple clippers — any of them pins a kick ceiling."]]},
+ {h:"Limiters",b:"Nothing passes. See Compressors → the wall.",p:[
+  ["Limiter",2,"Stress test and quick safety."],
+  ["FabFilter Pro-L 2",1,"The proper mastering ceiling, true-peak aware."],
+  ["Ozone 11 Maximizer / Vintage Limiter",0,"IRC loudness / analog-style color inside Ozone."],
+  ["FireMaximizer",0,"United's blended-algorithm loudness box."]]}]},
+
+{id:"verb",m:"RV",t:"Reverbs",tag:"Type → where → settings. Shared space goes on a return.",
+ reach:"<b>Placement rule:</b> shared space, mixable wetness → return (100% wet, EQ before: HPF ~300). Reverb that becomes the sound (freeze, design) → insert. In doubt → return.",
+ rule:"The two-return system: A 'Ambience' room 250–750 ms (everything sends a little) · B 'Lead Verb' plate/hall 1.2–2.5 s, pre-delay ~60 ms, ducked by the lead. Judge tails in context, never solo.",
+ secs:[
+ {h:"Ambience / room — invisible depth",b:"Glue the mix into one space. Return A, always on.",p:[
+  ["Hybrid Reverb",2,"Stock first grab: convolution + algorithm, great small rooms. 250–750 ms, pre-delay 2–25."],
+  ["ValhallaRoom",1,"Cleaner 'real space' than stock — the dedicated Ambience return."]]},
+ {h:"Plate — dense and rich",b:"Claps, vocal chops, rich leads. 1–2 s, pre-delay 30–60 ms.",p:[
+  ["ValhallaPlate",1,"True plate algorithms, gorgeous on claps and vocals."],
+  ["ValhallaVintageVerb (Plate mode)",0,"Plate with vintage color options."]]},
+ {h:"Hall — big and emotional",b:"Melodic leads, breakdowns. 2–4 s, pre-delay 60–100 ms, duck it.",p:[
+  ["ValhallaVintageVerb",1,"22 modes, the 70s/80s color dial — THE melodic house lead verb."],
+  ["NI RC-equivalents note",0,"VintageVerb already covers the classic 224/480 hall sound."]]},
+ {h:"Shimmer — pitched heaven",b:"Breakdown pads, intros. Sparingly; insert on a duplicate.",p:[
+  ["ValhallaShimmer",1,"The original octave-up cloud machine."]]},
+ {h:"Creative / freeze — reverb as instrument",b:"One chord → endless pad; risers; design. Insert, then resample.",p:[
+  ["NI Raum",1,"Freeze button + feedback = playable reverb. Distinct from the Valhallas."],
+  ["ValhallaSupermassive",0,"Free galaxy washes and echo-verbs, 22 modes."],
+  ["HyperspaceCore",0,"Quick XY-morph algorithmic verb."],
+  ["Comet",0,"Polyverse — morphs between five reverb presets, automatable travel."],
+  ["ThingsTexture",0,"Granular texture verb — pads become weather."]]}]},
+
+{id:"delay",m:"DL",t:"Delays",tag:"The genre default is a dotted-8th dub throw.",
+ reach:"Returns, 100% wet, EQ'd 300 Hz–3 kHz so only the useful band echoes. Feedback low (0–15%) unless the echo is the point.",
+ rule:"Unlinked stereo trick: L 50–200 ms, R 20–50 ms behind, feedback 0–15% = instant width on a lead or vocal.",
+ secs:[
+ {h:"Character — analog soul",b:"Tape wobble, saturation, vintage drift.",p:[
+  ["EchoBoy",1,"~30 styles of every classic echo box. The dub delay king for stabs and vocals."],
+  ["EchoBoy Jr",0,"One-style quick version."],
+  ["ValhallaDelay",0,"Tape/BBD/ghost modes — character delay with Valhalla smoothness."],
+  ["ValhallaFreqEcho",0,"Frequency-shifter echo — dub lasers and psychedelia."]]},
+ {h:"Clean / modern",b:"Synced echoes without personality imposition.",p:[
+  ["Echo",2,"Stock first grab: synced, filtered, gated, wobble if wanted. Dotted-8th lives here."],
+  ["Replika",0,"Simple clean delay + phaser. (Replika XT upgrade: not yet in the scan — verify install.)"],
+  ["Delay / Simple Delay",2,"Bread-and-butter stock echoes."]]},
+ {h:"Creative — echoes that evolve",b:"Delay as texture generator.",p:[
+  ["FabFilter Timeless 3",1,"Modulated delay laboratory — echoes that filter, drift and bloom."],
+  ["ValhallaUberMod",0,"Multi-tap chorus-delay cloud machine."]]}]},
+
+{id:"motion",m:"MO",t:"Motion & Modulation",tag:"Pump, sweep, wobble, rise.",
+ reach:"Movement is arrangement-level energy: pump the pads, sweep into sections, let builds breathe. Tempo-synced tools first.",
+ rule:"Risers and builds: one orchestrated moment per section change beats five scattered effects.",
+ secs:[
+ {h:"Sidechain / pump",b:"The house heartbeat.",p:[
+  ["Compressor (sidechain)",2,"Transparent duck: fast attack, ~100 ms release, 3–6 dB on bass/pads keyed by kick."],
+  ["Kickstart 2",1,"One knob, perfect curve, done. Pads, bass, even sends."],
+  ["ShaperBox 3 (Volume)",1,"Drawn pump — any shape, multiband (duck only the lows of a pad)."],
+  ["LFOTool",0,"The classic curve pump utility."]]},
+ {h:"Filter motion",b:"Sweeps and spectral movement.",p:[
+  ["Auto Filter",2,"Automate cutoff; LFO for wobble. The build-up workhorse."],
+  ["FabFilter Volcano 3",0,"Characterful filter journeys with drive."],
+  ["Supermodal",0,"Polyverse modal filter — resonant body movement, sound-design grade."]]},
+ {h:"Chorus / flanger / phaser",b:"Width and shimmer through detune.",p:[
+  ["Chorus-Ensemble",2,"Stock covers classic chorus incl. lush ensemble."],
+  ["Phaser-Flanger",2,"Both modulation classics in one stock device."],
+  ["Retronaut Core",0,"Vintage chorus/vibrato + tape wow & flutter — instant 80s width on keys."],
+  ["Orbitron Core",0,"Multi-mode modulator, six flavors."],
+  ["ValhallaSpaceModulator",0,"Free flanger madness."],
+  ["AIR Jura Chorus",0,"The Juno-60 chorus button as a plugin."]]},
+ {h:"Risers & builds",b:"Tension machines.",p:[
+  ["Endless Smile",1,"One Intensity knob = a complete build-up (filter+verb+width rising). Dada Life magic."],
+  ["Eternal Return",0,"Dada Life riser: Amount + Pitch."],
+  ["RVRSE",0,"Reverse-reverb riser — free, instant transitions."],
+  ["Movement",0,"Output's rhythm engine — turns pads into pulsing textures."],
+  ["Finisher MICRO / RETRO",0,"UJAM multi-FX: one knob through 25–50 scene presets."]]}]},
+
+{id:"width",m:"WD",t:"Stereo & Imaging",tag:"Width is contrast: it works because the center is solid.",
+ reach:"Center + mono, always: kick, sub, lead, clap, vocal. Sides: hats, percs, layers. <b>Mono-check 10 seconds before every bounce.</b>",
+ rule:"Sub mono below ~120 Hz (Utility → Mono + frequency, or Imager band 1 to 0 width).",
+ secs:[
+ {h:"Width tools",b:"",p:[
+  ["Utility",2,"Width %, Mono maker, gain — the most important stock device nobody talks about."],
+  ["Ozone Imager 2",1,"Free per-band width with vectorscope — widen highs, mono lows."],
+  ["Wider",0,"Polyverse free mono-compatible widener."],
+  ["Wide Awake",0,"Dada Life widener — instant big, check mono after."],
+  ["KrystalField",0,"Krystal stereo field tool."]]},
+ {h:"Width by trickery",b:"Often better than widener plugins.",p:[
+  ["Unlinked delay (Echo)",2,"L/R offset 20–50 ms = width with depth. See Delays."],
+  ["Chorus-Ensemble",2,"Detune-based width for pads."],
+  ["Haas-free double",0,"Duplicate, nudge, pan — manual width that folds to mono safely if kept subtle."]]}]},
+
+{id:"vocal",m:"VO",t:"Vocals",tag:"Tune → repair → character → space.",
+ reach:"House vocals are usually chops and toplines: tune lightly, de-harsh, thicken, then the delay+plate recipe from the Delays/Reverbs pages.",
+ rule:"Chain order: tune → RX cleanup → EQ cuts → compress (opto then FET if needed) → de-ess → saturate lightly → sends.",
+ secs:[
+ {h:"Tuning & pitch",b:"",p:[
+  ["Auto-Tune Artist",1,"Live-style correction: Retune Speed + Flex-Tune. The 'effect' and the polish."],
+  ["Melodyne",1,"Per-note surgery: pitch, timing, vibrato. Live 12 has no ARA — work via clip transfer."],
+  ["Little AlterBoy",0,"Formant/pitch character box — instant deep or chipmunk chops."]]},
+ {h:"Repair (iZotope RX 11)",b:"Fix before you process.",p:[
+  ["RX De-ess / Mouth De-click / Breath Control",0,"The everyday vocal cleaners."],
+  ["RX De-reverb / Voice De-noise / De-hum",0,"Rescue roomy or noisy recordings."],
+  ["RX Music Rebalance",0,"Pull vocals out of (or down in) a full mix — stem magic."]]},
+ {h:"Thicken & character",b:"",p:[
+  ["Vocal Doubler",0,"Free instant stereo double."],
+  ["LUX Vocal Preamp",0,"Tube vocal color (12AX7 style)."],
+  ["QuickVox Core",0,"One-screen vocal strip for fast chops polish."],
+  ["UAD Century",0,"The 'real studio channel' treatment for a lead vocal."]]}]},
+
+{id:"lofi",m:"LF",t:"Lo-fi & Texture",tag:"'Old' and 'dusty' are flavors, not accidents.",
+ reach:"Texture tools when a loop is too clean or a melodic part needs nostalgia. Not drive — see Saturation for heat.",
+ rule:"One texture source per scene: RC-20 noise AND vinyl AND tape wobble together = soup.",
+ secs:[
+ {h:"Texture boxes",b:"",p:[
+  ["RC-20 Retro Color",1,"Six modules: noise, wobble, bitcrush, distort, space, volume drop. The modern lo-fi standard."],
+  ["Vinyl",0,"iZotope's free record simulator: dust, warp, mechanical noise."],
+  ["Redux",2,"Stock bitcrush/downsample — digital dirt."],
+  ["Erosion",2,"Stock micro-texture — subtle grit via modulated noise."],
+  ["ThingsTexture",0,"Granular clouds from any input."],
+  ["Mesa Lite note",0,"It's a clipper (Venomode), not a texture tool — listed under Clippers."]]}]},
+
+{id:"design",m:"SD",t:"Sound Design & Mangling",tag:"When the preset is raw material, not a result.",
+ reach:"Resample relentlessly: print the mangled result to audio (group → Post Mixer recording) and keep stacking.",
+ rule:"The best mangling chain is short: one pitch tool + one spectral tool + Roar. Then resample.",
+ secs:[
+ {h:"Manglers",b:"",p:[
+  ["Roar",2,"See Saturation — routing + feedback make it a design instrument."],
+  ["Manipulator",1,"Polyverse pitch/formant/harmonic mangler — vocals into aliens."],
+  ["Frequency Shifter",2,"Stock inharmonic weirdness — metallic risers from anything."],
+  ["Power Grid Disruptor",0,"Korneff glitch box: stutter, damage, detonate. Transitions."],
+  ["Corpus / Resonators",2,"Stock resonant body modeling — tonal percussion from noise."],
+  ["Supermodal",0,"Modal filter as a sound-design voice."],
+  ["Hybrid Reverb (Freeze)",2,"Stock freeze → pad factory."]]}]},
+
+{id:"meter",m:"MT",t:"Metering",tag:"One meter per step. Reset before reading.",
+ reach:"Kick solo → <b>True Peak ≤ −5</b> (Youlean). Kick+bass → <b>VU 0…+3</b> (mvMeter2 'VU Standard' = −18 dBFS). Stress test → <b>−9…−11 LUFS short-term</b>, PSR ≥ ~7. Bounce → ≈ −6 headroom.",
+ rule:"Meters sit LAST on Main. True Peak Max holds until ✕ reset — including your old mistakes.",
+ secs:[
+ {h:"The calibrated pair",b:"",p:[
+  ["mvMeter2",1,"'VU Standard' preset = VU @ −18 dBFS, verified from the manual. The energy needle."],
+  ["Youlean Loudness Meter 2",1,"Short-term LUFS, True Peak Max, PSR. The numbers side of the method."]]},
+ {h:"Analysis",b:"",p:[
+  ["SPAN",0,"Free spectrum — compare your curve against the reference's."],
+  ["MiniMeters suite",0,"App + per-module plugins (VU, Loudness, Spectrum, Stereometer…) — the dashboard on a second screen via Audio-Server."],
+  ["REFERENCE",0,"Level-matched A/B against pro tracks with band comparison."],
+  ["Tonal Balance Control 2",0,"iZotope genre curve check across the spectrum."],
+  ["Insight 2",0,"Full broadcast metering suite."],
+  ["s(M)exoscope / WaveObserver",0,"Oscilloscope / waveform watchers — see the kick's shape."],
+  ["Sonalksis FreeG",0,"Big precise gain fader with metering."]]},
+ {h:"Monitoring ≠ mixing",b:"",p:[
+  ["SIENNA GURU / ROOMS",0,"Headphone room simulation — monitoring chain only. BYPASS BEFORE EXPORT."]]}]},
+
+{id:"master",m:"MA",t:"Mastering",tag:"Another day, fresh ears, nothing left on Main from mixing.",
+ reach:"Bounce at ≈ −6 dBFS true peak, then master as a separate pass: tonal balance → dynamics → width → ceiling.",
+ rule:"Chain sketch: Ozone EQ (or Solid/Passive EQ) → Vintage Comp 1–2 dB → Imager (mono lows) → Maximizer to target. Tonal Balance 2 watching.",
+ secs:[
+ {h:"Ozone 11 modules by job",b:"",p:[
+  ["Maximizer",1,"The ceiling: IRC algorithms, character styles, soft clip."],
+  ["Clarity + Stabilizer",0,"Modern spectral balance: open dull mixes, tame resonant ones, adaptive target curve."],
+  ["Low End Focus",0,"Punch vs smooth below ~300 Hz without EQ."],
+  ["Imager",0,"Per-band width; band 1 to mono."],
+  ["Impact",0,"Micro-dynamics: breathe life back into dense mixes."],
+  ["Match EQ",0,"Steal a reference's tonal curve, apply at 20–40%."],
+  ["Vintage EQ / Comp / Limiter / Tape",0,"The analog color wing."],
+  ["Equalizer / Dynamic EQ / Dynamics / Exciter / Spectral Shaper / Master Rebalance",0,"The rest of the toolbox when a master needs a specific move."]]},
+ {h:"Outside Ozone",b:"",p:[
+  ["FabFilter Pro-L 2",0,"Alternative ceiling, pristine."],
+  ["KClip 3",0,"Pre-limiter clipping stage for loud genres."],
+  ["Mixboss",0,"W.A. top-down mixbus processor — opinionated quick glue."],
+  ["Plasma",0,"iZotope tube drive for the 2-bus."]]}]},
+
+{id:"sources",m:"SR",t:"Sound Sources",tag:"Synths and instruments by role, not by brand.",
+ reach:"Stock first here too: Operator, Wavetable, Analog and Drift cover a full tech house record. Reach for third-party when the sound in your head names it.",
+ rule:"Kick tuning home: Simpler + stock Tuner. Racks live on the SSD (/Volumes/PortableSSD/Music PROD) — mount it or they don't load.",
+ secs:[
+ {h:"Deep sound design",b:"",p:[
+  ["Serum 2 (+Serum)",1,"Wavetable standard: bass design, leads, the tech house workhorse."],
+  ["Vital",0,"Free spectral-warping wavetable — Serum's rival."],
+  ["Zebra2",0,"Modular semi-beast — evolving pads and cinematic motion."],
+  ["Voltage Modular (+FX)",0,"Full modular playground."]]},
+ {h:"Analog character",b:"",p:[
+  ["Diva",1,"u-he's analog king — melodic house leads and pads with real warmth."],
+  ["TyrellN6",0,"Free Juno-ish analog, instantly musical."],
+  ["UAD PolyMAX",0,"Poly analog gloss."],
+  ["Surrealistic MG-1 Plus",0,"Free Moog MG-1 — raw mono character."],
+  ["AIR Jura",0,"Juno-60 recreation, chorus included."]]},
+ {h:"Fast preset players",b:"",p:[
+  ["Nexus",0,"Instant polished dance sounds."],
+  ["Analog Lab V",0,"The whole V Collection as presets."],
+  ["SynthMaster One",0,"Wavetable preset machine."],
+  ["UJAM Usynth",0,"One plugin hosting multiple Titles — check its Title switcher."],
+  ["Splice Astra",0,"Splice's own synth, pairs with their sounds."],
+  ["SyndtSphere",0,"Free preset-morphing synth."]]},
+ {h:"Keys & acoustic",b:"",p:[
+  ["Keyscape",1,"The piano/EP collection — Duo patches with Omnisphere-grade depth."],
+  ["Addictive Keys",0,"Quick studio pianos."],
+  ["M1",0,"THE house piano/organ heritage machine."],
+  ["Velvet / MiniGrand",0,"AIR electric and acoustic pianos."],
+  ["LABS",0,"Free textures — now lives inside Splice INSTRUMENT."]]},
+ {h:"Samplers & platforms",b:"",p:[
+  ["Simpler / Sampler",2,"Stock sampling home — kick tuning, chops, instant instruments."],
+  ["Kontakt 7 / 8",0,"The library platform."],
+  ["CUBE",0,"Lunacy's 3D sample-morphing instrument — pads and motion."],
+  ["Reason Rack Plugin",0,"The whole Reason rack inside Live."],
+  ["Splice INSTRUMENT / Sounds / Bridge",0,"Sample search, key/tempo-matched previews into the set."]]},
+ {h:"UJAM performers",b:"",p:[
+  ["Virtual Bassist ROWDY 2",0,"Played bass grooves with style presets."],
+  ["Groovemate ONE",0,"Shaker/clap/tamb grooves with MIDI drag-out — instant humanized top percussion."]]}]},
+
+{id:"util",m:"UT",t:"Utilities & Unknowns",tag:"The glue, and the two open mysteries.",
+ reach:"Companion builds (GatekeeperMIDI, LFOTool_MFX, SynthMaster1FX, MiniMeters Audio-Server, RX Connect/Monitor) are side-builds of tools listed elsewhere — not separate tools.",
+ rule:"Open items: identify Decapitone in Live's GUI before using it · check the Live browser for which Waves plugins the shells actually hold.",
+ secs:[
+ {h:"Utilities",b:"",p:[
+  ["Utility",2,"Gain, width, mono, phase — the most-used device in any pro template."],
+  ["Tuner",2,"Kick and bass tuning checks."],
+  ["Sonalksis FreeG",0,"Oversized fader for precise rides."]]},
+ {h:"Unidentified / unknown",b:"",p:[
+  ["Decapitone",0,"UNIDENTIFIED vendor (user-folder install, no public trace). Check its GUI; don't use on sessions until verified."],
+  ["WaveShells 15.5–17.1",0,"Waves containers — which plugins are licensed is unknown. Check Live's browser under Plug-Ins → Waves."],
+  ["Waves StudioRack for OBS",0,"Streaming-side chainer — irrelevant inside Live."],
+  ["Retromulator",0,"discoDSP hardware-synth emulator — needs user-supplied ROMs to do anything."]]}]}
+];
+
+const app=document.getElementById('app');
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const BADGE={2:['STOCK','b2'],1:['FIRST GRAB','b1'],0:['OWNED','b0']};
+let searchTimer=null;
+
+function home(filter){
+  let h=`<h1 class="pagetitle">The Plugin Guide</h1>
+  <p class="sub">Every tool you own, organized by the decision you're making — not by brand. Pick a category, or search a plugin or a symptom.</p>
+  <div class="searchbar"><input id="q" type="search" placeholder="Search plugins, jobs, symptoms… (e.g. ‘punch’, ‘soothe’, ‘mud’)" value="${filter?esc(filter):''}" autocomplete="off"></div>
+  <div class="legend"><span class="badge b2">Stock</span><span class="lbl">Ableton — always first</span>
+  <span class="badge b1">First grab</span><span class="lbl">owned default</span>
+  <span class="badge b0">Owned</span><span class="lbl">alternative flavor</span></div>`;
+  if(filter&&filter.trim().length>1){h+=results(filter.trim().toLowerCase());}
+  else{
+    h+=`<div class="grid">`+DATA.map(c=>`<div class="cat" tabindex="0" role="button" data-go="${c.id}">
+      <span class="mono">${c.m}</span><h2>${c.t}</h2><p>${c.tag}</p>
+      <span class="count">${c.secs.reduce((a,s)=>a+s.p.length,0)} tools</span></div>`).join('')+`</div>`;
+  }
+  app.innerHTML=h;
+  const q=document.getElementById('q');
+  q.addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>home(q.value),120);const v=q.value;requestAnimationFrame(()=>{const nq=document.getElementById('q');if(nq){nq.focus();nq.setSelectionRange(v.length,v.length);}});});
+  app.querySelectorAll('[data-go]').forEach(el=>{
+    const go=()=>{location.hash=el.dataset.go};
+    el.addEventListener('click',go);
+    el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
+  });
+}
+
+function hl(text,needle){
+  const i=text.toLowerCase().indexOf(needle);
+  if(i<0)return esc(text);
+  return esc(text.slice(0,i))+'<mark>'+esc(text.slice(i,i+needle.length))+'</mark>'+esc(text.slice(i+needle.length));
+}
+
+function results(needle){
+  let out='',hits=0;
+  DATA.forEach(c=>{
+    const rows=[];
+    c.secs.forEach(s=>s.p.forEach(p=>{
+      if((p[0]+' '+p[2]+' '+s.h+' '+c.t).toLowerCase().includes(needle)){
+        rows.push(`<div class="plug"><span class="pname">${hl(p[0],needle)}</span>
+        <span class="badge ${BADGE[p[1]][1]}">${BADGE[p[1]][0]}</span>
+        <span class="ptext">${hl(p[2],needle)} <b>· ${esc(s.h)}</b></span></div>`);
+      }
+    }));
+    if(rows.length){hits+=rows.length;
+      out+=`<div class="resgroup">${c.t}</div><section class="block">${rows.join('')}</section>`;}
+  });
+  return hits?out:`<div class="noresults">Nothing matches “${esc(needle)}”. Try a job word: punch, mud, wide, pump, tail…</div>`;
+}
+
+function category(c){
+  app.innerHTML=`<button class="back" id="bk">← All categories</button>
+  <h1 class="pagetitle">${c.t}</h1>
+  <div class="reach">${c.reach}</div>`+
+  c.secs.map(s=>`<section class="block"><h3>${s.h}</h3>${s.b?`<p class="blurb">${s.b}</p>`:''}
+    ${s.p.map(p=>`<div class="plug"><span class="pname">${esc(p[0])}</span>
+    <span class="badge ${BADGE[p[1]][1]}">${BADGE[p[1]][0]}</span>
+    <span class="ptext">${esc(p[2])}</span></div>`).join('')}</section>`).join('')+
+  `<div class="rule"><b>Rule of thumb:</b> ${c.rule}</div>`;
+  document.getElementById('bk').addEventListener('click',()=>{location.hash='home'});
+  window.scrollTo(0,0);
+}
+
+function route(){
+  const h=(location.hash||'#home').slice(1);
+  const c=DATA.find(x=>x.id===h);
+  if(c)category(c);else home('');
+}
+document.getElementById('homebtn').addEventListener('click',()=>{location.hash='home'});
+document.getElementById('homebtn').addEventListener('keydown',e=>{if(e.key==='Enter')location.hash='home'});
+window.addEventListener('hashchange',route);
+route();
+</script>

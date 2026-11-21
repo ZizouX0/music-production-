@@ -71,3 +71,39 @@ this taxonomy.
 
 NI installs pending on the Mac (then rescan inventory): Solid EQ,
 Passive EQ, Raum, Replika XT (optional: Solid Dynamics, VC 160).
+
+## Saturation/distortion types (heat scale)
+
+One idea: all of these add harmonics. Small = warm, big = destroyed.
+Ask: "how much heat?"
+
+1. **WARM — invisible thickness** (busses, refinement): HG-2 (king;
+   Density = drive both tubes, level-compensated), UAD 610/Century
+   (per-track preamp color), Saturation Knob, SDRR2 Tube,
+   LittleRadiator. Stock: Saturator Soft Sine, low drive.
+2. **HOT — audible character** (main mixing level): Saturator (stock
+   workhorse, curve + drive), **Saturn 2 (multiband — saturate bass
+   MIDS only, sub stays clean: the small-speaker trick)**, Fresh Air
+   (highs-only exciter), FireCharger, RC-20/Vinyl (texture/lo-fi, not
+   drive).
+3. **BURNING — obvious distortion** (sound design): **Roar (stock
+   flagship: 3 stages, serial/parallel/M-S/multiband routing, tunable
+   feedback, built-in comp + modulation)**, Cyberdrive Core,
+   Electrum/Bassment (amp sims), SausageFattener (cranked).
+
+Cousins: clippers (KClip 3, KNOCK, GClip, Mesa Lite) = peak shaving,
+a dynamics job; Redux = bitcrush.
+
+| Situation | Tool |
+|---|---|
+| Drum bus analog weight | HG-2 (Density + Air) |
+| Bass audible on phone, clean sub | Saturn 2 mids band (or Roar multiband, angrier) |
+| One sound needs presence | Saturator |
+| Growl / build-up / destruction | Roar |
+| Vintage texture | RC-20, Vinyl |
+| Dull top | Fresh Air (exciter) or Maag (EQ) |
+| 2-bus final thickness | HG-2, barely on |
+
+Discipline: count heat sources per signal path — one deliberate
+saturator beats four accidental ones. HG-2 = "expensive", Saturator =
+"present", Roar = "dangerous".

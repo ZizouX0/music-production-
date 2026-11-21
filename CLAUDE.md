@@ -40,12 +40,16 @@ tools that appear there. Go-to shortlist by job:
   Hyperspace (reverb), Retronaut (chorus), Orbitron (modulator),
   Cyberdrive (distortion), Electrum/Bassment (amp sims), QuickVox
   (vocal strip).
-- **EQ:** FabFilter Pro-Q 4 (also Q2/Q3), Maag EQ2, TDR Nova, MIXROOM.
+- **EQ:** FabFilter Pro-Q 4 (also Q2/Q3), Maag EQ2, TDR Nova, MIXROOM,
+  NI Solid EQ (SSL-console character). Type taxonomy + per-type picks:
+  `docs/eq-compressor-types.md`.
 - **Compression/dynamics:** FabFilter Pro-C 2, Pro-MB, Pro-G, Pro-DS,
   Pro-L 2; soothe2; OTT; UAD LA-2A & 1176; Neutron 4 Elements;
-  Gatekeeper, RoyalCompressor, FirePresser; clippers: KClip3, KNOCK,
-  GClip, FreeClip; transients: SPL Attacker Plus, HelperTransients2,
-  UrbanPuncher.
+  Gatekeeper, RoyalCompressor, FirePresser, NI Solid Dynamics, NI
+  VC 160 (dbx-style drum punch), NI Solid Bus Comp (same SSL G unit as
+  stock Glue — prefer Glue); clippers: KClip3, KNOCK, GClip, FreeClip;
+  transients: SPL Attacker Plus, HelperTransients2, UrbanPuncher, NI
+  Transient Master; sidechain ducking: Kickstart 2 (one-knob pump).
 - **Saturation/color:** Saturn 2, RC-20 Retro Color, Black Box HG-2,
   SausageFattener, Supercharger, UAD 610/Century, Fresh Air, Vinyl,
   FireCharger, Cyberdrive/Electrum/Bassment Cores. (Decapitone is
@@ -53,7 +57,7 @@ tools that appear there. Go-to shortlist by job:
 - **Reverb/delay:** full Valhalla suite (VintageVerb, Room, Plate,
   Shimmer, Delay, Supermassive, FreqEcho, UberMod, SpaceModulator),
   FabFilter Pro-R 2, Timeless 3, EchoBoy (+Jr), Replika, Comet
-  (Polyverse), HyperspaceCore.
+  (Polyverse), HyperspaceCore, NI Raum (creative reverb with freeze).
 - **Motion/modulation:** ShaperBox 3, LFOTool, Movement, Endless Smile,
   FabFilter Volcano 3, Twin 3, Supermodal, Manipulator.
 - **Vocals:** Auto-Tune Artist, Melodyne, iZotope RX 11 suite, Vocal

@@ -1,508 +1,231 @@
-MUSIC PLUGINS INVENTORY
-Generated: 2026-10-12 21:17
+MY MUSIC PLUGINS (VST2 / VST3 / AU) — duplicates removed
+Unique plugins: 219   (from 523 plugin files found)
+Scanned: /Library/Audio/Plug-Ins and ~/Library/Audio/Plug-Ins (VST, VST3, Components)
+Format tags in [ ] show which versions you have installed.
 
-========== VST3 — /Users/azizdardouri/Library/Audio/Plug-Ins/VST3 ==========
-Decapitone
+ADA Flanger  [VST3]
+Addictive Keys  [VST2]
+AIR Jura Chorus  [VST2, VST3, AU]
+Analog Lab V  [VST2, VST3, AU]
+Astra  [VST3, AU]
+Auto-Tune Artist  [VST3, AU]
+BassmentCore  [VST2, VST3, AU]
+Black Box Analog Design HG-2  [VST3]
+Comet  [VST3, AU]
+Cradle The God Particle  [VST3, AU]
+CUBE  [VST2, VST3, AU]
+CyberdriveCore  [VST2, VST3, AU]
+Decapitone  [VST3, AU]
+Diva  [VST3, AU]
+EchoBoy  [VST2, VST3, AU]
+EchoBoyJr  [VST2, VST3, AU]
+ElectrumCore  [VST2, VST3, AU]
+Endless Smile  [VST2, VST3, AU]
+Eternal Return  [VST2, VST3, AU]
+FabFilter Micro  [VST2, VST3, AU]
+FabFilter One  [VST2, VST3, AU]
+FabFilter Pro-C 2  [VST2, VST3, AU]
+FabFilter Pro-DS  [VST2, VST3, AU]
+FabFilter Pro-G  [VST2, VST3, AU]
+FabFilter Pro-L  [VST2, VST3, AU]
+FabFilter Pro-L 2  [VST2, VST3, AU]
+FabFilter Pro-MB  [VST2, VST3, AU]
+FabFilter Pro-Q 2  [VST2, VST3, AU]
+FabFilter Pro-Q 3  [VST2, VST3, AU]
+FabFilter Pro-Q 4  [VST2, VST3, AU]
+FabFilter Pro-R  [VST2, VST3, AU]
+FabFilter Pro-R 2  [VST2, VST3, AU]
+FabFilter Saturn  [VST2, VST3, AU]
+FabFilter Saturn 2  [VST2, VST3, AU]
+FabFilter Simplon  [VST2, VST3, AU]
+FabFilter Timeless 2  [VST2, VST3, AU]
+FabFilter Timeless 3  [VST2, VST3, AU]
+FabFilter Twin 2  [VST2, VST3, AU]
+FabFilter Twin 3  [VST2, VST3, AU]
+FabFilter Volcano 2  [VST2, VST3, AU]
+FabFilter Volcano 3  [VST2, VST3, AU]
+Filtron  [VST3]
+FIN-MICRO  [VST2, VST3, AU]
+FIN-RETRO  [VST2, VST3, AU]
+FireCharger  [VST2, VST3, AU]
+FireMaximizer  [VST2, VST3, AU]
+FirePresser  [VST2, VST3, AU]
+Formant  [VST3]
+FreeClip  [VST2]
+Fresh Air  [VST3, AU]
+Gatekeeper  [VST3]
+GatekeeperMIDI  [AU]
+GClip  [VST2]
+GM-ONE  [VST2, VST3, AU]
+HelperTransients2  [VST2, VST3, AU]
+Hybrid  [VST2, VST3, AU]
+HyperspaceCore  [VST2, VST3, AU]
+Insight 2  [AU]
+Jura  [VST2, VST3, AU]
+KClip3  [VST2, VST3, AU]
+Keyscape  [VST3]
+Kickstart 2  [VST2, VST3, AU]
+KNOCK Clipper  [VST3, AU]
+Kontakt 7  [VST3, AU]
+Kontakt 8  [VST3, AU]
+KrystalClip  [AU]
+KrystalComp  [AU]
+KrystalField  [VST3, AU]
+KSHMREssentialsKick  [VST2, VST3, AU]
+LABS  [VST2, VST3, AU]
+LANDR FX Bass  [VST3, AU]
+LANDR FX Beats  [VST3, AU]
+LANDR FX Electric  [VST3, AU]
+LANDR FX Voice  [VST3, AU]
+LFOTool  [VST2, AU]
+LFOTool_MFX  [AU]
+LittleAlterBoy  [VST2, VST3, AU]
+LittleRadiator  [VST2, VST3, AU]
+LOVEND  [VST2, VST3, AU]
+LUX Sub-Bass  [VST3, AU]
+LUX Vocal Preamp  [VST3, AU]
+M1  [VST2, VST3, AU]
+Maag EQ2  [VST3]
+Manipulator  [VST3, AU]
+Melodyne  [VST3, AU]
+Mesa Lite  [AU]
+MiniGrand  [VST2, VST3, AU]
+MiniMeters  [VST3, AU]
+MiniMeters - Audio-Server  [VST3, AU]
+MiniMeters - Loudness  [VST3, AU]
+MiniMeters - Oscilloscope  [VST3, AU]
+MiniMeters - Spectrogram  [VST3, AU]
+MiniMeters - Spectrum  [VST3, AU]
+MiniMeters - Stereometer  [VST3, AU]
+MiniMeters - VU  [VST3, AU]
+MiniMeters - Waveform  [VST3, AU]
+Mixboss  [VST2, VST3, AU]
+MixBox  [VST3, AU]
+MIXROOM  [VST3]
+Movement  [VST2, VST3, AU]
+mvMeter2nogpu  [VST2, VST3, AU]
+Neutron 4 Elements  [VST3, AU]
+Nexus  [VST3]
+OrbitronCore  [VST2, VST3, AU]
+OTT  [VST2, VST3, AU]
+Ozone 11  [VST3, AU]
+Ozone 11 Clarity  [VST3, AU]
+Ozone 11 Dynamic EQ  [VST3, AU]
+Ozone 11 Dynamics  [VST3, AU]
+Ozone 11 Equalizer  [VST3, AU]
+Ozone 11 Exciter  [VST3, AU]
+Ozone 11 Imager  [VST3, AU]
+Ozone 11 Impact  [VST3, AU]
+Ozone 11 Low End Focus  [VST3, AU]
+Ozone 11 Master Rebalance  [VST3, AU]
+Ozone 11 Match EQ  [VST3, AU]
+Ozone 11 Maximizer  [VST3, AU]
+Ozone 11 Spectral Shaper  [VST3, AU]
+Ozone 11 Stabilizer  [VST3, AU]
+Ozone 11 Vintage Compressor  [VST3, AU]
+Ozone 11 Vintage EQ  [VST3, AU]
+Ozone 11 Vintage Limiter  [VST3, AU]
+Ozone 11 Vintage Tape  [VST3, AU]
+Ozone Imager 2  [VST2, VST3, AU]
+Plasma  [VST3, AU]
+Power Grid Disruptor  [AU]
+QuickVoxCore  [VST2, VST3, AU]
+Raum  [VST2, VST3, AU]
+RC-20 Retro Color  [VST3]
+Reason Rack Plugin  [VST3, AU]
+REFERENCE  [VST3]
+Replika  [VST2, VST3, AU]
+Retromulator  [VST3, AU]
+RetronautCore  [VST2, VST3, AU]
+RoyalCompressor  [VST2, VST3, AU]
+RVRSE  [AU]
+RX 11 Breath Control  [VST3, AU]
+RX 11 Connect  [VST3, AU]
+RX 11 De-click  [VST3, AU]
+RX 11 De-clip  [VST3, AU]
+RX 11 De-crackle  [VST3, AU]
+RX 11 De-ess  [VST3, AU]
+RX 11 De-hum  [VST3, AU]
+RX 11 De-plosive  [VST3, AU]
+RX 11 De-reverb  [VST3, AU]
+RX 11 Dialogue Isolate  [VST3, AU]
+RX 11 Guitar De-noise  [VST3, AU]
+RX 11 Monitor  [VST3, AU]
+RX 11 Mouth De-click  [VST3, AU]
+RX 11 Music Rebalance  [AU]
+RX 11 Repair Assistant  [VST3, AU]
+RX 11 Spectral De-noise  [VST3, AU]
+RX 11 Spectral Editor  [AU]
+RX 11 Voice De-noise  [VST3, AU]
+s(M)exoscope  [VST3, AU]
+Saturation Knob  [VST2, VST3, AU]
+SausageFattener  [VST2, VST3, AU]
+SDRR2tube  [VST3]
+Serum  [VST3]
+Serum2  [VST3, AU]
+ShaperBox 3  [VST2, VST3, AU]
+SIENNA GURU  [VST3]
+SIENNA ROOMS  [VST3]
+Solid Bus Comp  [VST2, VST3, AU]
+Solid Dynamics  [VST2, VST3, AU]
+Solid EQ  [VST2, VST3, AU]
+Sonalksis FreeG  [AU]
+soothe2  [VST2, VST3, AU]
+Space In-Your-Face  [VST2, VST3, AU]
+SPAN  [VST2, VST3, AU]
+SPL Attacker Plus  [VST3]
+Splice INSTRUMENT  [VST3, AU]
+Splice Sounds  [VST3, AU]
+Splice Sounds Listener  [VST3, AU]
+SpliceBridge  [VST3, AU]
+Supercharger  [VST2, VST3, AU]
+Supermodal  [VST3, AU]
+Surrealistic MG-1 Plus  [VST3]
+SyndtSphere  [VST2, VST3, AU]
+SynthMaster1  [AU]
+SynthMaster1FX  [AU]
+TBTECH Trinity Shaper  [VST2, VST3, AU]
+TDR Nova  [VST3]
+ThingsTexture  [AU]
+Tonal Balance Control 2  [VST2, VST3, AU]
+Transient Master  [VST2, VST3, AU]
+TyrellN6  [VST3, AU]
+uaudio_610_a  [VST3, AU]
+uaudio_610_b  [VST3, AU]
+uaudio_century_channel_strip  [VST3, AU]
+uaudio_polymax  [VST3, AU]
+uaudio_showtime_amp  [VST3, AU]
+uaudio_teletronix_la-2a_tc  [VST3, AU]
+uaudio_ua_1176  [VST3, AU]
+UrbanPuncher  [VST2, VST3, AU]
+USYNTH  [VST2, VST3, AU]
+ValhallaDelay  [VST2, VST3, AU]
+ValhallaFreqEcho  [VST2, VST3, AU]
+ValhallaPlate  [VST2, VST3, AU]
+ValhallaRoom  [VST2, VST3, AU]
+ValhallaShimmer  [VST2, VST3, AU]
+ValhallaSpaceModulator  [VST2, VST3, AU]
+ValhallaSupermassive  [VST2, VST3, AU]
+ValhallaUberMod  [VST2, VST3, AU]
+ValhallaVintageVerb  [VST2, VST3, AU]
+VB-ROWDY  [VST2, VST3, AU]
+VC 160  [VST2, VST3, AU]
+Velvet  [VST2, VST3, AU]
+Vinyl  [VST2, VST3, AU]
+Vital  [VST2, VST3, AU]
+Vocal Doubler  [VST2, VST3, AU]
+Voltage Modular  [VST3]
+Voltage Modular FX  [VST3]
+WaveObserver  [VST3, AU]
+Waves StudioRack for OBS  [VST2]
+Wide Awake  [VST2, VST3, AU]
+Wider  [VST3, AU]
+Youlean Loudness Meter 2  [VST3, AU]
+Zebra2  [VST3]
 
-========== Components — /Users/azizdardouri/Library/Audio/Plug-Ins/Components ==========
-Decapitone
-
-========== VST — /Users/azizdardouri/Library/Audio/Plug-Ins/VST ==========
-
-========== VST3 — /Library/Audio/Plug-Ins/VST3 ==========
-ADA Flanger
-AIR Jura Chorus
-Analog Lab V
-Astra
-Auto-Tune Artist
-BassmentCore
-Black Box Analog Design HG-2
-Comet
-Cradle The God Particle
-CUBE
-CyberdriveCore
-Diva
-EchoBoy
-EchoBoyJr
-ElectrumCore
-Endless Smile
-Eternal Return
-FabFilter Micro
-FabFilter One
-FabFilter Pro-C 2
-FabFilter Pro-DS
-FabFilter Pro-G
-FabFilter Pro-L
-FabFilter Pro-L 2
-FabFilter Pro-MB
-FabFilter Pro-Q 2
-FabFilter Pro-Q 3
-FabFilter Pro-Q 4
-FabFilter Pro-R
-FabFilter Pro-R 2
-FabFilter Saturn
-FabFilter Saturn 2
-FabFilter Simplon
-FabFilter Timeless 2
-FabFilter Timeless 3
-FabFilter Twin 2
-FabFilter Twin 3
-FabFilter Volcano 2
-FabFilter Volcano 3
-Filtron
-FIN-MICRO
-FIN-RETRO
-FireCharger
-FireMaximizer
-FirePresser
-Formant
-Fresh Air
-Gatekeeper
-GClip
-GM-ONE
-HelperTransients2
-Hybrid
-HyperspaceCore
-Jura
-KClip3
-Keyscape
-KNOCK Clipper
-Kontakt 7
-Kontakt 8
-KrystalField
-KSHMREssentialsKick
-LABS
-LANDR FX Bass
-LANDR FX Beats
-LANDR FX Electric
-LANDR FX Voice
-LittleAlterBoy
-LittleRadiator
-LOVEND
-LUX Sub-Bass
-LUX Vocal Preamp
-M1
-Maag EQ2
-Manipulator
-Melodyne
-MiniGrand
-MiniMeters
-MiniMeters - Audio-Server
-MiniMeters - Loudness
-MiniMeters - Oscilloscope
-MiniMeters - Spectrogram
-MiniMeters - Spectrum
-MiniMeters - Stereometer
-MiniMeters - VU
-MiniMeters - Waveform
-Mixboss
-MixBox
-MIXROOM
-Movement
-mvMeter2nogpu
-Neutron 4 Elements
-Nexus
-OrbitronCore
-OTT
-Ozone 11
-Ozone 11 Clarity
-Ozone 11 Dynamic EQ
-Ozone 11 Dynamics
-Ozone 11 Equalizer
-Ozone 11 Exciter
-Ozone 11 Imager
-Ozone 11 Impact
-Ozone 11 Low End Focus
-Ozone 11 Master Rebalance
-Ozone 11 Match EQ
-Ozone 11 Maximizer
-Ozone 11 Spectral Shaper
-Ozone 11 Stabilizer
-Ozone 11 Vintage Compressor
-Ozone 11 Vintage EQ
-Ozone 11 Vintage Limiter
-Ozone 11 Vintage Tape
-Ozone Imager 2
-Plasma
-QuickVoxCore
-RC-20 Retro Color
-REFERENCE
-Replika
-Retromulator
-RetronautCore
-RoyalCompressor
-RVRSE
-RX 11 Breath Control
-RX 11 Connect
-RX 11 De-click
-RX 11 De-clip
-RX 11 De-crackle
-RX 11 De-ess
-RX 11 De-hum
-RX 11 De-plosive
-RX 11 De-reverb
-RX 11 Dialogue Isolate
-RX 11 Guitar De-noise
-RX 11 Monitor
-RX 11 Mouth De-click
-RX 11 Repair Assistant
-RX 11 Spectral De-noise
-RX 11 Voice De-noise
-s(M)exoscope
-Saturation Knob
-SausageFattener
-SDRR2tube
-Serum
-Serum2
-ShaperBox 3
-SIENNA GURU
-SIENNA ROOMS
-soothe2
-Space In-Your-Face
-SPAN
-SPL Attacker Plus
-Splice INSTRUMENT
-Splice Sounds
-Splice Sounds Listener
-SpliceBridge
-Supercharger
-Supermodal
-Surrealistic MG-1 Plus
-SyndtSphere
-TBTECH Trinity Shaper
-TDR Nova
-Tonal Balance Control 2
-TyrellN6
-uaudio_610_a
-uaudio_610_b
-uaudio_century_channel_strip
-uaudio_polymax
-uaudio_showtime_amp
-uaudio_teletronix_la-2a_tc
-uaudio_ua_1176
-UrbanPuncher
-USYNTH
-ValhallaDelay
-ValhallaFreqEcho
-ValhallaPlate
-ValhallaRoom
-ValhallaShimmer
-ValhallaSpaceModulator
-ValhallaSupermassive
-ValhallaUberMod
-ValhallaVintageVerb
-VB-ROWDY
-Velvet
-Vinyl
-Vital
-Vocal Doubler
-Voltage Modular
-Voltage Modular FX
-WaveObserver
-WaveShell1-VST3 15.5
-WaveShell1-VST3 16.0
-WaveShell1-VST3 16.6
-WaveShell1-VST3 16.7
-Wide Awake
-Wider
-Youlean Loudness Meter 2
-Zebra2
-
-========== Components — /Library/Audio/Plug-Ins/Components ==========
-AIR Jura Chorus
-Analog Lab V
-Astra
-Auto-Tune Artist
-BassmentCore
-Comet
-Cradle The God Particle
-CUBE
-CyberdriveCore
-Diva
-EchoBoy
-EchoBoyJr
-ElectrumCore
-Endless Smile
-Eternal Return
-FabFilter Micro
-FabFilter One
-FabFilter Pro-C 2
-FabFilter Pro-DS
-FabFilter Pro-G
-FabFilter Pro-L
-FabFilter Pro-L 2
-FabFilter Pro-MB
-FabFilter Pro-Q 2
-FabFilter Pro-Q 3
-FabFilter Pro-Q 4
-FabFilter Pro-R
-FabFilter Pro-R 2
-FabFilter Saturn
-FabFilter Saturn 2
-FabFilter Simplon
-FabFilter Timeless 2
-FabFilter Timeless 3
-FabFilter Twin 2
-FabFilter Twin 3
-FabFilter Volcano 2
-FabFilter Volcano 3
-FIN-MICRO
-FIN-RETRO
-FireCharger
-FireMaximizer
-FirePresser
-Fresh Air
-GatekeeperMIDI
-GM-ONE
-HelperTransients2
-Hybrid
-HyperspaceCore
-iZInsight2AUHook
-iZNeutron4ElementsAUHook
-iZOzone11AUHook
-iZOzone11ClarityAUHook
-iZOzone11DynamicEQAUHook
-iZOzone11DynamicsAUHook
-iZOzone11EqualizerAUHook
-iZOzone11ExciterAUHook
-iZOzone11ImagerAUHook
-iZOzone11ImpactAUHook
-iZOzone11LowEndFocusAUHook
-iZOzone11MasterRebalanceAUHook
-iZOzone11MatchEQAUHook
-iZOzone11MaximizerAUHook
-iZOzone11SpectralShaperAUHook
-iZOzone11StabilizerAUHook
-iZOzone11VintageCompressorAUHook
-iZOzone11VintageEQAUHook
-iZOzone11VintageLimiterAUHook
-iZOzone11VintageTapeAUHook
-iZOzoneImager2AUHook
-iZPlasmaAUHook
-iZRX11BreathControlAUHook
-iZRX11ConnectAUHook
-iZRX11De-clickAUHook
-iZRX11De-clipAUHook
-iZRX11De-crackleAUHook
-iZRX11De-essAUHook
-iZRX11De-humAUHook
-iZRX11De-plosiveAUHook
-iZRX11De-reverbAUHook
-iZRX11DialogueIsolateAUHook
-iZRX11GuitarDe-noiseAUHook
-iZRX11MonitorAUHook
-iZRX11MouthDe-clickAUHook
-iZRX11MusicRebalanceARAAUHook
-iZRX11RepairAssistantAUHook
-iZRX11SpectralDe-noiseAUHook
-iZRX11SpectralEditorAUHook
-iZRX11VoiceDe-noiseAUHook
-iZTonalBalanceControl2AUHook
-iZVinylAUHook
-iZVocalDoublerAUHook
-Jura
-KClip3
-KNOCK Clipper
-Kontakt 7
-Kontakt 8
-KrystalClip
-KrystalComp
-KrystalField
-KSHMREssentialsKick
-LABS
-LANDR FX Bass
-LANDR FX Beats
-LANDR FX Electric
-LANDR FX Voice
-LFOTool
-LFOTool_MFX
-LittleAlterBoy
-LittleRadiator
-LOVEND
-LUX Sub-Bass
-LUX Vocal Preamp
-M1
-Manipulator
-Melodyne
-Mesa Lite
-MiniGrand
-MiniMeters
-MiniMeters - Audio-Server
-MiniMeters - Loudness
-MiniMeters - Oscilloscope
-MiniMeters - Spectrogram
-MiniMeters - Spectrum
-MiniMeters - Stereometer
-MiniMeters - VU
-MiniMeters - Waveform
-Mixboss
-MixBox
-Movement
-mvMeter2nogpu
-OrbitronCore
-OTT
-Power Grid Disruptor
-QuickVoxCore
-Replika
-Retromulator
-RetronautCore
-RoyalCompressor
-RVRSE
-s(M)exoscope
-Saturation Knob
-SausageFattener
-Serum2
-ShaperBox 3
-Sonalksis FreeG Mono
-Sonalksis FreeG Stereo
-soothe2
-Space In-Your-Face
-SPAN
-Splice INSTRUMENT
-Splice Sounds
-Splice Sounds Listener
-SpliceBridge
-Supercharger
-Supermodal
-SyndtSphere
-SynthMaster1
-SynthMaster1FX
-TBTECH Trinity Shaper
-ThingsTexture
-TyrellN6
-uaudio_610_a
-uaudio_610_b
-uaudio_century_channel_strip
-uaudio_polymax
-uaudio_showtime_amp
-uaudio_teletronix_la-2a_tc
-uaudio_ua_1176
-UrbanPuncher
-USYNTH
-ValhallaDelay
-ValhallaFreqEcho
-ValhallaPlate
-ValhallaRoomAU64
-ValhallaShimmerAU64
-ValhallaSpaceModulator
-ValhallaSupermassive
-ValhallaUberModAU64
-ValhallaVintageVerbAU64
-VB-ROWDY
-Velvet
-Vital
-WaveObserver
-WaveShell1-AU 15.5
-WaveShell1-AU 16.0
-WaveShell1-AU 16.6
-WaveShell1-AU 16.7
-Wide Awake
-Wider
-Youlean Loudness Meter 2
-
-========== VST — /Library/Audio/Plug-Ins/VST ==========
-Addictive Keys
-AIR Jura Chorus
-Analog Lab V
-BassmentCore
-CUBE
-CyberdriveCore
-EchoBoy
-EchoBoyJr
-ElectrumCore
-Endless Smile
-Eternal Return
-FabFilter Micro
-FabFilter Micro (Mono)
-FabFilter One
-FabFilter Pro-C 2
-FabFilter Pro-C 2 (Mono)
-FabFilter Pro-DS
-FabFilter Pro-DS (Mono)
-FabFilter Pro-G
-FabFilter Pro-G (Mono)
-FabFilter Pro-L
-FabFilter Pro-L (Mono)
-FabFilter Pro-L 2
-FabFilter Pro-MB
-FabFilter Pro-MB (Mono)
-FabFilter Pro-Q 2
-FabFilter Pro-Q 2 (Mono)
-FabFilter Pro-Q 3
-FabFilter Pro-Q 4
-FabFilter Pro-R
-FabFilter Pro-R (Mono)
-FabFilter Pro-R 2
-FabFilter Saturn
-FabFilter Saturn (Mono)
-FabFilter Saturn 2
-FabFilter Simplon
-FabFilter Timeless 2
-FabFilter Timeless 2 (SC)
-FabFilter Timeless 3
-FabFilter Twin 2
-FabFilter Twin 3
-FabFilter Volcano 2
-FabFilter Volcano 2 (Mono)
-FabFilter Volcano 2 (SC Mono)
-FabFilter Volcano 2 (SC)
-FabFilter Volcano 3
-FIN-MICRO
-FIN-RETRO
-FireCharger
-FireMaximizer
-FirePresser
-FreeClip
-Fresh Air
-GM-ONE
-HelperTransients2
-Hybrid
-HyperspaceCore
-Jura
-KClip3
-KSHMREssentialsKick
-LABS
-LFOTool
-LittleAlterBoy
-LittleRadiator
-LOVEND
-M1
-MiniGrand
-Mixboss
-Movement
-mvMeter2nogpu
-OrbitronCore
-OTT
-Ozone Imager 2
-QuickVoxCore
-Replika
-RetronautCore
-RoyalCompressor
-Saturation Knob
-SausageFattener
-ShaperBox 3
-soothe2
-Space In-Your-Face
-SPAN
-Supercharger
-SyndtSphere
-TBTECH Trinity Shaper
-Tonal Balance Control 2
-UrbanPuncher
-USYNTH
-ValhallaDelay
-ValhallaFreqEcho
-ValhallaPlate
-ValhallaRoom_x64
-ValhallaShimmer_x64
-ValhallaSpaceModulator
-ValhallaSupermassive
-ValhallaUberMod_x64
-ValhallaVintageVerb_x64
-VB-ROWDY
-Velvet
-Vinyl
-Vital
-Vocal Doubler
-Waves StudioRack for OBS
-Wide Awake
+WAVES SHELLS (individual Waves plugins live inside these shells):
+WaveShell 15.5  [VST3, AU]
+WaveShell 16.0  [VST3, AU]
+WaveShell 16.6  [VST3, AU]
+WaveShell 16.7  [VST3, AU]
+WaveShell 17.1  [VST3, AU]
